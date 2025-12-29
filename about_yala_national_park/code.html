@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About Yala National Park</title>
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS with Config -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f4c025",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#231e10",
+                        "surface-dark": "#342d18",
+                        "border-dark": "#493f22",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        /* Custom scrollbar for subtle safari feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #231e10;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #493f22;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f4c025;
+        }
+    </style>
+</head>
+
+<body class="bg-background-dark text-white font-display overflow-x-hidden">
+    <!-- Top Navigation -->
+    <nav class="sticky top-0 z-50 w-full border-b border-border-dark bg-background-dark/95 backdrop-blur-sm">
+        <div class="px-4 md:px-10 py-3 flex items-center justify-between max-w-[1280px] mx-auto">
+            <div class="flex items-center gap-4 text-white">
+                <div class="text-primary">
+                    <span class="material-symbols-outlined text-3xl">forest</span>
+                </div>
+                <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Yala National Park</h2>
+            </div>
+            <div class="hidden md:flex items-center gap-9">
+                <a class="text-white hover:text-primary transition-colors text-sm font-medium leading-normal"
+                    href="#">Safaris</a>
+                <a class="text-primary text-sm font-medium leading-normal" href="#">About</a>
+                <a class="text-white hover:text-primary transition-colors text-sm font-medium leading-normal"
+                    href="#">Wildlife</a>
+                <a class="text-white hover:text-primary transition-colors text-sm font-medium leading-normal"
+                    href="#">Gallery</a>
+                <a class="text-white hover:text-primary transition-colors text-sm font-medium leading-normal"
+                    href="#">Contact</a>
+            </div>
+            <button
+                class="hidden md:flex cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-6 bg-primary hover:bg-yellow-500 transition-colors text-background-dark text-sm font-bold leading-normal tracking-[0.015em]">
+                <span class="truncate">Book Safari</span>
+            </button>
+            <button class="md:hidden text-white">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <header class="relative flex min-h-[600px] flex-col items-center justify-center p-4 text-center">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+            data-alt="Majestic leopard resting on a tree branch in Yala National Park"
+            style='background-image: linear-gradient(to bottom, rgba(35, 30, 16, 0.3) 0%, rgba(35, 30, 16, 1) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDTOE7jcpA424AyJWhMh0cAsYRtMoGF8LOZcHQRy9d0qwXR7XgbBSA2fqXDATqs3MbItQgLuiTBabWCk0k-0RWXhdgxI8Db9hIbvDtHNC8uUFMPT2NtQ2_KgrA5S6Q1nrez5AtZBwuxYDnp1SEak0kfWG0Chjy2BomoLqDicKn47M4anPYmTFfNsg-PH8rWrOuJHIeXw52DKVZrC-7HCAJ5kVBDUcyUPa-gf5MTUPBP-DXIHe4CU-iQNcy_WrYAZLk1b1ZERAoq_IkO");'>
+        </div>
+        <div class="relative z-10 flex flex-col gap-6 max-w-[800px] animate-fade-in-up">
+            <h1 class="text-white text-5xl md:text-7xl font-black leading-tight tracking-tighter drop-shadow-lg">
+                Where the Wilderness Reigns
+            </h1>
+            <p class="text-white/90 text-lg md:text-xl font-normal leading-relaxed max-w-2xl mx-auto drop-shadow-md">
+                Experience the untamed beauty of Sri Lanka's most famous wildlife sanctuary. A land of leopards,
+                elephants, and ancient forests.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mt-4">
+                <button
+                    class="flex items-center justify-center rounded-xl h-12 px-8 bg-primary hover:bg-yellow-500 text-background-dark text-base font-bold transition-all">
+                    Explore Our Story
+                </button>
+                <button
+                    class="flex items-center justify-center rounded-xl h-12 px-8 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white text-base font-bold transition-all">
+                    View Park Map
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Quick Stats Bar -->
+    <section class="border-y border-border-dark bg-surface-dark/50">
+        <div class="max-w-[960px] mx-auto px-4 py-8">
+            <div class="flex flex-wrap gap-4 justify-center md:justify-between">
+                <div class="flex min-w-[150px] flex-col items-center md:items-start gap-1">
+                    <div class="flex items-center gap-2 text-primary">
+                        <span class="material-symbols-outlined">pets</span>
+                        <p class="text-sm font-medium uppercase tracking-wider">Leopard Density</p>
+                    </div>
+                    <p class="text-white text-3xl font-bold">Highest Globally</p>
+                </div>
+                <div class="w-px bg-border-dark hidden md:block"></div>
+                <div class="flex min-w-[150px] flex-col items-center md:items-start gap-1">
+                    <div class="flex items-center gap-2 text-primary">
+                        <span class="material-symbols-outlined">map</span>
+                        <p class="text-sm font-medium uppercase tracking-wider">Protected Area</p>
+                    </div>
+                    <p class="text-white text-3xl font-bold">979 sq km</p>
+                </div>
+                <div class="w-px bg-border-dark hidden md:block"></div>
+                <div class="flex min-w-[150px] flex-col items-center md:items-start gap-1">
+                    <div class="flex items-center gap-2 text-primary">
+                        <span class="material-symbols-outlined">flutter_dash</span>
+                        <p class="text-sm font-medium uppercase tracking-wider">Bird Species</p>
+                    </div>
+                    <p class="text-white text-3xl font-bold">215+</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Kingdom of the Leopard Section -->
+    <section class="py-20 px-4 md:px-10">
+        <div class="max-w-[960px] mx-auto flex flex-col gap-12">
+            <div class="flex flex-col md:flex-row gap-8 items-start justify-between">
+                <div class="flex flex-col gap-4 max-w-[600px]">
+                    <h2 class="text-primary font-bold tracking-wider text-sm uppercase">Wildlife Spotlight</h2>
+                    <h3 class="text-4xl md:text-5xl font-black text-white leading-tight">Kingdom of the Leopard</h3>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        Yala Block 1 boasts one of the highest densities of leopards in the world. The semi-arid thorny
+                        scrub forest provides the perfect camouflage for these elusive big cats, making Yala the premier
+                        destination for leopard sightings globally.
+                    </p>
+                    <button
+                        class="text-primary font-bold flex items-center gap-2 mt-2 group hover:gap-3 transition-all">
+                        Learn about Panthera pardus kotiya
+                        <span
+                            class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </button>
+                </div>
+                <div class="w-full md:w-1/3 relative">
+                    <div class="bg-surface-dark p-6 rounded-2xl border border-border-dark flex flex-col gap-4">
+                        <div class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary text-3xl">visibility</span>
+                            <span class="text-white font-bold text-lg">Sighting Tips</span>
+                        </div>
+                        <ul class="text-gray-400 text-sm space-y-3">
+                            <li class="flex gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-primary mt-1.5"></span>
+                                Look for movement in the high branches of Palu trees.
+                            </li>
+                            <li class="flex gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-primary mt-1.5"></span>
+                                Early morning (6-8 AM) is prime activity time.
+                            </li>
+                            <li class="flex gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-primary mt-1.5"></span>
+                                Listen for alarm calls from deer and monkeys.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Visual Gallery of Leopard Traits -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="group relative overflow-hidden rounded-xl bg-surface-dark border border-border-dark">
+                    <div class="aspect-video w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                        data-alt="Close up of a Sri Lankan leopard face"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA2ittbCHTXswqzXAWZhg-i0h9czVMfI09s5HK17mMbZJLJbB-0Qt62A8GV7lRK_Mcad05msgvsLXcas27ejC16GBJAlUkmZTjGMJf_UeU6zNJuGjBuTAjghIyndrg3CFoPGNH9Fu7TmcFIeqoWb2saKFh9Te6c2_w1RV_L7VTVYybkEY0fkJvH1ccKoW9TPFjQpUChSnIA7tklaQw4ZnmFv7pCU8yqRyWlCgzqyP-dLiGbdJOG9chxPHQD7s-5JCmuNjqK2gNEOo8z");'>
+                    </div>
+                    <div class="p-4 relative bg-surface-dark">
+                        <h4 class="text-white text-lg font-bold mb-1">Apex Predator</h4>
+                        <p class="text-gray-400 text-sm">The top of the food chain in Sri Lanka, evolving with no
+                            natural competition.</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl bg-surface-dark border border-border-dark">
+                    <div class="aspect-video w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                        data-alt="Leopard resting on a rock formation"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB4rKEtSsazGMHYXGLlJjG9kuVGgdSLSJ0H0JztGL-lwZTY2EYruw4ob26CkgPj2ILzKYHAZo42QbWVWzlcNTdtlQbnsW0h2Qe8KlWgUj70uzYoJ8ZDY9PNCbjnmRVCah6ZoNBvMVi07fcj_gAba5eN9EtoSI04B6UGu24VSyE7Nx8f2COI_FmsC0Lww3grlT8zM1p3QvMRjAuqhabULl-K-vP4k8PSLxlERkXIQleZH8SEU4_4LsislOOPB_lS3a5GyMH4QvcHO7C-");'>
+                    </div>
+                    <div class="p-4 relative bg-surface-dark">
+                        <h4 class="text-white text-lg font-bold mb-1">Territorial Reign</h4>
+                        <p class="text-gray-400 text-sm">Males command large territories, often overlapping with several
+                            females.</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl bg-surface-dark border border-border-dark">
+                    <div class="aspect-video w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                        data-alt="Leopard cub playing in the grass"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDkJ9ctWQKdW5WL42I7zK-z835NkE8nujz1YYdXD5bb7h3GKES59zKG8fgy3iYbjwQgYUlJ7TNuqohX6FLno14qpR7h11FOEfdd1PZGrICgDmmPku1EL9XLdGopNTCnaPgwhA3IKIMWC2a5QDJWbcB4905_OvFrZSLjD3qew9q4XUJMbyACJeccEOau7nnz035SOmuTbGArMYYIC0TGirfZ8DeXozKcPohc54tu0AtnVQqVHiwUdzpFd62Qc2EpPlQkFprHcVTfuLOB");'>
+                    </div>
+                    <div class="p-4 relative bg-surface-dark">
+                        <h4 class="text-white text-lg font-bold mb-1">New Generations</h4>
+                        <p class="text-gray-400 text-sm">Strict conservation efforts have led to a stable and growing
+                            population.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Mission & Vision Section -->
+    <section class="bg-surface-dark/30 py-20 px-4 md:px-10 border-y border-border-dark">
+        <div class="max-w-[960px] mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-black text-white mb-4">Our Purpose</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">We preserve the wild while sharing its wonder with the world.
+                    Our commitment goes beyond tourism; it is a pledge to protect the delicate ecosystems of Yala.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Mission Card -->
+                <div
+                    class="flex flex-col gap-6 rounded-2xl border border-border-dark bg-surface-dark p-8 hover:border-primary/50 transition-colors">
+                    <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                        <span class="material-symbols-outlined">eco</span>
+                    </div>
+                    <div>
+                        <h3 class="text-white text-2xl font-bold mb-3">Our Mission</h3>
+                        <p class="text-[#cbbc90] leading-relaxed">
+                            To provide world-class sustainable safari experiences that directly contribute to wildlife
+                            conservation and local community upliftment, ensuring that every visitor leaves as an
+                            ambassador for the wild.
+                        </p>
+                    </div>
+                </div>
+                <!-- Vision Card -->
+                <div
+                    class="flex flex-col gap-6 rounded-2xl border border-border-dark bg-surface-dark p-8 hover:border-primary/50 transition-colors">
+                    <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                        <span class="material-symbols-outlined">visibility</span>
+                    </div>
+                    <div>
+                        <h3 class="text-white text-2xl font-bold mb-3">Our Vision</h3>
+                        <p class="text-[#cbbc90] leading-relaxed">
+                            To be the global benchmark for eco-tourism in Asia, creating a sanctuary where wildlife
+                            thrives undisturbed and humans can observe nature in its purest form for generations to
+                            come.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Conservation Commitment Section (Text + Image) -->
+    <section class="py-20 px-4 md:px-10">
+        <div class="max-w-[960px] mx-auto flex flex-col md:flex-row-reverse items-center gap-12">
+            <div class="w-full md:w-1/2">
+                <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-border-dark">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
+                    <img class="w-full h-auto object-cover aspect-[4/3] hover:scale-105 transition-transform duration-700"
+                        data-alt="Park ranger observing wildlife with binoculars"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMA4prbEP9w6hGtqLjY6ZaA-JCaNnWFp1hredo1p83PMKfo39yZ7UCuDK4Z3p79zFbCu99n-H_Y5N4NtQmKCX1bCJWQOfeBFe6kxpJItkUa_De2MDQ61WJK4HfRnsrMQDrENIafP-g2XVL6vxabj7J9jWe9G7b7bU8mx9TABj0Z0LQqX4ldE39tGhIGnf8Nc6s8SvI3pw78ZY_RG53PlTzl9YrWEtmrubFphINM9YpRtQQ6O9eCJmGSVWUXVS5_cwjgaZNNkO03e4J" />
+                    <div class="absolute bottom-4 left-4 z-20">
+                        <div
+                            class="bg-primary text-background-dark text-xs font-bold px-3 py-1 rounded-full w-fit mb-2">
+                            Since 1938</div>
+                        <p class="text-white font-medium">Protecting 979km² of wilderness</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 flex flex-col gap-6">
+                <h2 class="text-3xl md:text-4xl font-black text-white">Treading Lightly</h2>
+                <div class="space-y-4">
+                    <p class="text-gray-300 leading-relaxed">
+                        Our presence in Yala is a privilege, not a right. We adhere to strict "No Trace" policies during
+                        all our safaris.
+                    </p>
+                    <div class="flex flex-col gap-4 mt-2">
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-primary mt-1">recycling</span>
+                            <div>
+                                <h4 class="text-white font-bold">Plastic-Free Zone</h4>
+                                <p class="text-sm text-gray-400">We operate 100% plastic-free safaris to prevent
+                                    pollution in animal habitats.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-primary mt-1">speed</span>
+                            <div>
+                                <h4 class="text-white font-bold">Speed Monitoring</h4>
+                                <p class="text-sm text-gray-400">Our vehicles are GPS-monitored to ensure strict
+                                    adherence to park speed limits.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-primary mt-1">volunteer_activism</span>
+                            <div>
+                                <h4 class="text-white font-bold">Community Support</h4>
+                                <p class="text-sm text-gray-400">A portion of every booking goes directly to
+                                    anti-poaching units and local schools.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="mt-4 border border-primary text-primary hover:bg-primary hover:text-background-dark transition-colors px-6 py-3 rounded-xl font-bold w-fit">
+                    Read Our Conservation Report
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Timeline / Story Section -->
+    <section class="bg-surface-dark/20 py-20 px-4 md:px-10">
+        <div class="max-w-[800px] mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-black text-white">The Story of Yala</h2>
+                <p class="text-gray-400 mt-2">From hunting grounds to hallowed sanctuary.</p>
+            </div>
+            <div class="relative border-l-2 border-border-dark ml-4 md:ml-0 md:pl-0 space-y-12">
+                <!-- Timeline Item 1 -->
+                <div class="relative pl-8 md:pl-0 md:grid md:grid-cols-[1fr_auto_1fr] md:gap-8 items-center group">
+                    <!-- Dot -->
+                    <div
+                        class="absolute -left-[9px] top-1 md:static md:col-start-2 md:col-end-3 md:flex md:justify-center">
+                        <div
+                            class="w-4 h-4 bg-primary rounded-full ring-4 ring-background-dark group-hover:ring-primary/30 transition-all">
+                        </div>
+                    </div>
+                    <!-- Content (Left on Desktop) -->
+                    <div class="md:text-right md:pr-8">
+                        <span class="text-primary font-bold text-xl block mb-1">1900</span>
+                        <h3 class="text-white text-lg font-bold">Designated Wildlife Sanctuary</h3>
+                        <p class="text-gray-400 text-sm mt-2">Under British rule, the area was designated a sanctuary to
+                            curb excessive hunting, marking the first step in conservation.</p>
+                    </div>
+                    <!-- Empty Right -->
+                    <div class="hidden md:block"></div>
+                </div>
+                <!-- Timeline Item 2 -->
+                <div class="relative pl-8 md:pl-0 md:grid md:grid-cols-[1fr_auto_1fr] md:gap-8 items-center group">
+                    <div
+                        class="absolute -left-[9px] top-1 md:static md:col-start-2 md:col-end-3 md:flex md:justify-center">
+                        <div
+                            class="w-4 h-4 bg-primary rounded-full ring-4 ring-background-dark group-hover:ring-primary/30 transition-all">
+                        </div>
+                    </div>
+                    <div class="hidden md:block"></div>
+                    <div class="md:pl-8">
+                        <span class="text-primary font-bold text-xl block mb-1">1938</span>
+                        <h3 class="text-white text-lg font-bold">National Park Status</h3>
+                        <p class="text-gray-400 text-sm mt-2">Yala was officially proclaimed a National Park, cementing
+                            its legal status as a protected area for flora and fauna.</p>
+                    </div>
+                </div>
+                <!-- Timeline Item 3 -->
+                <div class="relative pl-8 md:pl-0 md:grid md:grid-cols-[1fr_auto_1fr] md:gap-8 items-center group">
+                    <div
+                        class="absolute -left-[9px] top-1 md:static md:col-start-2 md:col-end-3 md:flex md:justify-center">
+                        <div
+                            class="w-4 h-4 bg-primary rounded-full ring-4 ring-background-dark group-hover:ring-primary/30 transition-all">
+                        </div>
+                    </div>
+                    <div class="md:text-right md:pr-8">
+                        <span class="text-primary font-bold text-xl block mb-1">1954</span>
+                        <h3 class="text-white text-lg font-bold">Park Expansion</h3>
+                        <p class="text-gray-400 text-sm mt-2">The park was expanded to include five blocks,
+                            significantly increasing the protected range for roaming elephants.</p>
+                    </div>
+                    <div class="hidden md:block"></div>
+                </div>
+                <!-- Timeline Item 4 -->
+                <div class="relative pl-8 md:pl-0 md:grid md:grid-cols-[1fr_auto_1fr] md:gap-8 items-center group">
+                    <div
+                        class="absolute -left-[9px] top-1 md:static md:col-start-2 md:col-end-3 md:flex md:justify-center">
+                        <div
+                            class="w-4 h-4 bg-primary rounded-full ring-4 ring-background-dark group-hover:ring-primary/30 transition-all">
+                        </div>
+                    </div>
+                    <div class="hidden md:block"></div>
+                    <div class="md:pl-8">
+                        <span class="text-primary font-bold text-xl block mb-1">Today</span>
+                        <h3 class="text-white text-lg font-bold">Global Conservation Leader</h3>
+                        <p class="text-gray-400 text-sm mt-2">Yala stands as a beacon of biodiversity, attracting
+                            researchers and nature lovers from every corner of the globe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team / Guides Section -->
+    <section class="py-20 px-4 md:px-10">
+        <div class="max-w-[960px] mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-black text-white">Meet Our Trackers</h2>
+                    <p class="text-gray-400 mt-2 max-w-lg">Our guides are not just employees; they are naturalists with
+                        decades of experience reading the language of the jungle.</p>
+                </div>
+                <button class="text-primary font-bold flex items-center gap-2 hover:gap-3 transition-all">
+                    View All Guides <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </button>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Guide 1 -->
+                <div
+                    class="group bg-surface-dark border border-border-dark rounded-2xl overflow-hidden hover:shadow-xl hover:shadow-primary/5 transition-all duration-300">
+                    <div class="aspect-[4/5] bg-cover bg-center" data-alt="Portrait of senior safari guide Sunil"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCGYq0C0jBO-MHwjtXTAml5G8Rn2n3dtKnbSkqQP8_gsdzCu9h-U7wRETJshdCRvHi0hQAJ9b0OG0ucDK6VwWxbKAplatWdWPyOk4Gzh5MwAkH1tbKFXAiGX6_4cuLpEdUURdANxIBYvk6BjPH81kbwXxUXCuVsVhzDH2Q1C2Eu9DQzhVyp4XLVxn_WUyNh65Ny3NYOLBfqyQHcqRn47zsMiCTAe8pTp23vNAQFnwHMzeCELhK0H8GHgnoweYBWgbgdoRcZ5ITIqKmF");'>
+                        <!-- Gradient overlay for text readability -->
+                        <div
+                            class="w-full h-full bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6">
+                            <h3 class="text-white text-xl font-bold">Sunil Perera</h3>
+                            <p class="text-primary font-medium text-sm">Head Tracker • 15 Yrs Exp.</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-400 text-sm">"The jungle speaks if you know how to listen. My goal is to
+                            teach you its language."</p>
+                        <div class="mt-4 flex gap-2">
+                            <span
+                                class="px-2 py-1 rounded bg-background-dark text-xs text-gray-300 border border-border-dark">Leopards</span>
+                            <span
+                                class="px-2 py-1 rounded bg-background-dark text-xs text-gray-300 border border-border-dark">Birding</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Guide 2 -->
+                <div
+                    class="group bg-surface-dark border border-border-dark rounded-2xl overflow-hidden hover:shadow-xl hover:shadow-primary/5 transition-all duration-300">
+                    <div class="aspect-[4/5] bg-cover bg-center" data-alt="Portrait of naturalist guide Dinesh"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuARtgL8icYHyBuKQ-13u9GpcuY09VT36OdyQoaIxb854TD07cgO4ZG4wPwHdppoaSo0KzoCUL8moX-JCgveaXpVKHKEexIkFuWnkUAzZqFSj3nCvNCEmNTYR_kJefBe9mEUyJ2SQBbIflWJ1yy0DwhL_srgWDzqTygeDqQHRxcdEfKllzU1BzVQAfsk_eo2D_y2h5QlTO6PZxZTl5pKIt_-FndPQpWPI3iybaBcX2GHs9J5JSHLYehrC5jzqWbcj21qP0A9jFqUS8qZ");'>
+                        <div
+                            class="w-full h-full bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6">
+                            <h3 class="text-white text-xl font-bold">Dinesh Silva</h3>
+                            <p class="text-primary font-medium text-sm">Naturalist • 8 Yrs Exp.</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-400 text-sm">"Every safari is different. I love showing guests the smaller
+                            wonders, from insects to rare flora."</p>
+                        <div class="mt-4 flex gap-2">
+                            <span
+                                class="px-2 py-1 rounded bg-background-dark text-xs text-gray-300 border border-border-dark">Botany</span>
+                            <span
+                                class="px-2 py-1 rounded bg-background-dark text-xs text-gray-300 border border-border-dark">Photography</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Guide 3 -->
+                <div
+                    class="group bg-surface-dark border border-border-dark rounded-2xl overflow-hidden hover:shadow-xl hover:shadow-primary/5 transition-all duration-300">
+                    <div class="aspect-[4/5] bg-cover bg-center" data-alt="Portrait of wildlife expert Kamal"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAF1p-pzpZy9vlsuixFLjtWbcXA_qrtERKbVGHOY48_HAQDoRL-o8Z84X6dW_ouBrp35beOb8edySEGaGo5Jau40TcNikhP-l4Iu8BI7kWpnW2NVUgWKXAVniM8uI0-bC_jqHGHZ2999KiUyxEM0lIYo_1E1dBs2M8y3thvKoLOUYODdMNEWlmU0vbsN5bGsVPe4fj_sLsQmJhE4oJsy0jBFkZ-sT3FvLBhWvagopqJ2XCUUBFMN9UWkrpJ4rDR6RHkJJExIXpT9-V0");'>
+                        <div
+                            class="w-full h-full bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6">
+                            <h3 class="text-white text-xl font-bold">Kamal De Soyza</h3>
+                            <p class="text-primary font-medium text-sm">Senior Ranger • 20 Yrs Exp.</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-400 text-sm">"Conservation starts with awareness. Seeing a leopard in the
+                            wild changes people forever."</p>
+                        <div class="mt-4 flex gap-2">
+                            <span
+                                class="px-2 py-1 rounded bg-background-dark text-xs text-gray-300 border border-border-dark">Conservation</span>
+                            <span
+                                class="px-2 py-1 rounded bg-background-dark text-xs text-gray-300 border border-border-dark">Tracking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer CTA -->
+    <section class="py-20 px-4 md:px-10 bg-primary/10 border-t border-border-dark">
+        <div class="max-w-[960px] mx-auto text-center flex flex-col items-center gap-6">
+            <h2 class="text-3xl md:text-5xl font-black text-white">Ready to Witness the Wild?</h2>
+            <p class="text-gray-300 text-lg max-w-2xl">Book your sustainable safari experience today and contribute to
+                the protection of Yala's legacy.</p>
+            <div class="flex flex-col sm:flex-row gap-4 mt-4 w-full justify-center">
+                <button
+                    class="flex items-center justify-center rounded-xl h-14 px-10 bg-primary text-background-dark text-lg font-bold hover:bg-yellow-500 transition-colors shadow-lg shadow-primary/20">
+                    Book Your Safari
+                </button>
+                <button
+                    class="flex items-center justify-center rounded-xl h-14 px-10 bg-transparent border border-white/20 text-white text-lg font-bold hover:bg-white/10 transition-colors">
+                    Contact Us
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Simple Footer -->
+    <footer class="bg-background-dark border-t border-border-dark py-10 px-4">
+        <div
+            class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-gray-500">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary">forest</span>
+                <span>© 2024 Yala National Park. All rights reserved.</span>
+            </div>
+            <div class="flex gap-6">
+                <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+                <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+                <a class="hover:text-primary transition-colors" href="#">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Yala Safari Services</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f4c025",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#221e10",
+                        "surface-dark": "#2c2616",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display antialiased selection:bg-primary selection:text-background-dark">
+    <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+        <!-- TopNavBar -->
+        <header class="sticky top-0 z-50 w-full bg-background-dark/95 backdrop-blur-sm border-b border-[#493f22]">
+            <div class="px-4 md:px-10 py-3 flex items-center justify-between max-w-[1280px] mx-auto w-full">
+                <div class="flex items-center gap-4 text-white">
+                    <div class="size-10 flex items-center justify-center rounded-lg bg-primary/10 text-primary">
+                        <span class="material-symbols-outlined text-2xl">forest</span>
+                    </div>
+                    <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Yala Safari Services</h2>
+                </div>
+                <div class="hidden md:flex flex-1 justify-end gap-8 items-center">
+                    <nav class="flex items-center gap-9">
+                        <a class="text-white/90 hover:text-primary transition-colors text-sm font-medium leading-normal"
+                            href="#">Home</a>
+                        <a class="text-white/90 hover:text-primary transition-colors text-sm font-medium leading-normal"
+                            href="#">Safaris</a>
+                        <a class="text-white/90 hover:text-primary transition-colors text-sm font-medium leading-normal"
+                            href="#">About Park</a>
+                        <a class="text-white/90 hover:text-primary transition-colors text-sm font-medium leading-normal"
+                            href="#">Contact Us</a>
+                    </nav>
+                    <button
+                        class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-6 bg-primary hover:bg-[#dca60e] transition-colors text-background-dark text-sm font-bold leading-normal tracking-[0.015em]">
+                        <span class="truncate">Book Now</span>
+                    </button>
+                </div>
+                <button class="md:hidden text-white">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </header>
+        <!-- HeroSection -->
+        <div class="relative w-full">
+            <div class="px-4 py-8 md:px-40 md:py-10 flex flex-1 justify-center">
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                    <div class="@container">
+                        <div class="@[480px]:p-4">
+                            <div class="flex min-h-[560px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 rounded-xl items-center justify-center p-8 relative overflow-hidden group"
+                                data-alt="Majestic leopard resting on a tree branch in Yala National Park during golden hour"
+                                style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuChIOWwzdf23cBwHqMdpTMnnhqTLPNJ4Ouj9_77G63UCCmLYYC9tN5S4u9YMKH-Ctoax0aQJpG--ggwQg2NwiaN-Cv9lDvst6QEXwxPY95QzuD1vZKiUilw7CF7GLw9NyTSOJ8vbDDDkVvn0NzqoYIzIjNeQV8MEwwC9oIfHPqloLFWiqBV4uiXOO1wLFoUx7HaoPGT_rDPA-gDdBRWY5sl9kUPmRfi5ZjbCloGtrE6YehzrKwSUaEvImKKFH6rtftbps81RKc1eHTh");'>
+                                <div
+                                    class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-700">
+                                </div>
+                                <div class="flex flex-col gap-4 text-center relative z-10 max-w-2xl">
+                                    <span class="text-primary font-bold tracking-widest text-xs uppercase">Welcome to
+                                        the Jungle</span>
+                                    <h1
+                                        class="text-white text-5xl md:text-6xl font-black leading-tight tracking-[-0.033em] drop-shadow-lg">
+                                        Discover the Wild Heart of Yala
+                                    </h1>
+                                    <h2
+                                        class="text-white/90 text-base md:text-lg font-medium leading-relaxed max-w-lg mx-auto drop-shadow-md">
+                                        Choose your adventure. From golden sunrises to elusive leopards, experience Sri
+                                        Lanka's premier wildlife sanctuary.
+                                    </h2>
+                                </div>
+                                <div class="flex gap-4 relative z-10 flex-wrap justify-center">
+                                    <button
+                                        class="flex cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-8 bg-primary hover:bg-[#dca60e] transition-all transform hover:scale-105 text-background-dark text-base font-bold leading-normal tracking-[0.015em] shadow-lg shadow-black/20">
+                                        <span class="truncate">View Safari Packages</span>
+                                    </button>
+                                    <button
+                                        class="flex cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-8 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 transition-all text-white text-base font-bold leading-normal tracking-[0.015em]">
+                                        <span class="truncate">Plan Your Trip</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SectionHeader & Chips -->
+        <div class="px-4 md:px-40 py-5 flex flex-1 justify-center">
+            <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                <div class="flex flex-col md:flex-row md:items-end justify-between px-4 pb-6 pt-5 gap-4">
+                    <div>
+                        <h2
+                            class="text-slate-900 dark:text-white text-[32px] font-bold leading-tight tracking-[-0.015em]">
+                            Our Safari Experiences</h2>
+                        <p class="text-slate-600 dark:text-[#cbbc90] mt-2 text-base">Expertly curated tours for every
+                            kind of explorer</p>
+                    </div>
+                    <!-- Chips -->
+                    <div class="flex gap-2 flex-wrap">
+                        <button
+                            class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-primary text-background-dark pl-4 pr-4 transition-transform hover:-translate-y-0.5 shadow-md shadow-primary/20">
+                            <span class="material-symbols-outlined text-[18px]">grid_view</span>
+                            <p class="text-sm font-bold leading-normal">All Safaris</p>
+                        </button>
+                        <button
+                            class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-surface-dark border border-[#493f22] hover:border-primary/50 pl-4 pr-4 transition-colors group">
+                            <span
+                                class="material-symbols-outlined text-[18px] text-white/70 group-hover:text-primary">diamond</span>
+                            <p class="text-white/90 text-sm font-medium leading-normal group-hover:text-white">Luxury
+                            </p>
+                        </button>
+                        <button
+                            class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-surface-dark border border-[#493f22] hover:border-primary/50 pl-4 pr-4 transition-colors group">
+                            <span
+                                class="material-symbols-outlined text-[18px] text-white/70 group-hover:text-primary">photo_camera</span>
+                            <p class="text-white/90 text-sm font-medium leading-normal group-hover:text-white">
+                                Photography</p>
+                        </button>
+                        <button
+                            class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-surface-dark border border-[#493f22] hover:border-primary/50 pl-4 pr-4 transition-colors group">
+                            <span
+                                class="material-symbols-outlined text-[18px] text-white/70 group-hover:text-primary">savings</span>
+                            <p class="text-white/90 text-sm font-medium leading-normal group-hover:text-white">Budget
+                            </p>
+                        </button>
+                    </div>
+                </div>
+                <!-- Safari Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+                    <!-- Card 1: Morning -->
+                    <div
+                        class="flex flex-col bg-surface-dark rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-primary/5 transition-all duration-300 hover:-translate-y-1 group border border-[#3a321d]">
+                        <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover relative"
+                            data-alt="Safari jeep driving through mist in Yala National Park at sunrise"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA_XKKHRD3BLdIfHL6cp9PpVnl3K7iIGsNdcFdpjIE5j2BdfARi9skOBS9AL9d6aSOZUxWi2vOGJYJpbmlPno0vTowKxr9g6EIKZqxBzhLZZ8CfV-O4Ncl7Vi5TdP5PHQYLqwFN7mK1-fmNjn-6pjYof_E1GQx4ikcZ2QQEYDFwsVouuoMt2ST8liIBUUV8M17_KnLDLdtS9PGvz1s-9FAMLmkKsQ6USmtobPxd72nQGrPc2WnmB5xQj2RNBLUYfy-JB14ZV9dJ96xs");'>
+                            <div
+                                class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-3 py-1 rounded-full border border-white/10">
+                                <p class="text-primary text-xs font-bold uppercase tracking-wider">Best Seller</p>
+                            </div>
+                        </div>
+                        <div class="p-5 flex flex-col gap-3 flex-1">
+                            <div class="flex justify-between items-start">
+                                <h3
+                                    class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors">
+                                    Morning Safari</h3>
+                            </div>
+                            <p class="text-[#cbbc90] text-sm font-normal leading-relaxed line-clamp-2">Catch the jungle
+                                waking up. Best for bird watching and spotting early risers.</p>
+                            <div class="my-2 h-px w-full bg-[#493f22]"></div>
+                            <div class="flex justify-between items-center text-sm">
+                                <div class="flex items-center gap-1.5 text-white/80">
+                                    <span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+                                    <span>4 Hours</span>
+                                </div>
+                                <div class="flex items-center gap-1.5 text-white/80">
+                                    <span class="material-symbols-outlined text-[18px] text-primary">groups</span>
+                                    <span>Shared/Private</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto pt-2 flex items-center justify-between gap-3">
+                                <div class="flex flex-col">
+                                    <span class="text-xs text-[#cbbc90]">Starting from</span>
+                                    <span class="text-lg font-bold text-white">$50 <span
+                                            class="text-xs font-normal text-white/50">/ person</span></span>
+                                </div>
+                                <button
+                                    class="flex-1 cursor-pointer bg-primary hover:bg-[#dca60e] text-background-dark font-bold py-2.5 px-4 rounded-lg transition-colors text-sm flex items-center justify-center gap-2">
+                                    Book Now
+                                    <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2: Evening -->
+                    <div
+                        class="flex flex-col bg-surface-dark rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-primary/5 transition-all duration-300 hover:-translate-y-1 group border border-[#3a321d]">
+                        <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover relative"
+                            data-alt="Elephants walking near water hole during golden sunset in Yala"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBaCcNFnfc_VxoEhgY0eEM9zmDIxrmri8hfbHdfq9IhLdw3wHmQCBjkroJHh1Ra7nvYWVKt2j7K7r6sCyqUVHJxa0H7W-ouQDlb2UL-fsz7q8Zwu9TSgOeQx3I1YH-k5zptmZcd59Or4GqAP5IukJJf4aPjz7qZ_uaw4XIlpOsNusZY-71R8Jyhkmh1i9mxc5Wz1xGS2neCydz0aTTaCzJJBTekezzQCN-NfcO4uHijVKm8eOrcgNoqQnVweIA2x1CE6-5uBoY2XcoY");'>
+                        </div>
+                        <div class="p-5 flex flex-col gap-3 flex-1">
+                            <div class="flex justify-between items-start">
+                                <h3
+                                    class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors">
+                                    Evening Safari</h3>
+                            </div>
+                            <p class="text-[#cbbc90] text-sm font-normal leading-relaxed line-clamp-2">Witness the
+                                wildlife activity during the golden hour as the heat of the day subsides.</p>
+                            <div class="my-2 h-px w-full bg-[#493f22]"></div>
+                            <div class="flex justify-between items-center text-sm">
+                                <div class="flex items-center gap-1.5 text-white/80">
+                                    <span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+                                    <span>3.5 Hours</span>
+                                </div>
+                                <div class="flex items-center gap-1.5 text-white/80">
+                                    <span class="material-symbols-outlined text-[18px] text-primary">wb_twilight</span>
+                                    <span>Sunset View</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto pt-2 flex items-center justify-between gap-3">
+                                <div class="flex flex-col">
+                                    <span class="text-xs text-[#cbbc90]">Starting from</span>
+                                    <span class="text-lg font-bold text-white">$50 <span
+                                            class="text-xs font-normal text-white/50">/ person</span></span>
+                                </div>
+                                <button
+                                    class="flex-1 cursor-pointer bg-primary hover:bg-[#dca60e] text-background-dark font-bold py-2.5 px-4 rounded-lg transition-colors text-sm flex items-center justify-center gap-2">
+                                    Book Now
+                                    <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3: Full Day -->
+                    <div
+                        class="flex flex-col bg-surface-dark rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-primary/5 transition-all duration-300 hover:-translate-y-1 group border border-[#3a321d]">
+                        <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover relative"
+                            data-alt="Jeep safari on a dirt road deep in the jungle"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDt5a7vYAHNrYxfRw0Fdb5oY1xXiZy7179yxvuYnT32TBMqAsZRVjXWEO8bIgxCF4inwnLvPaO8sMgN4c8bSAy34mZd1vOQibMu9YOEbx1AlwodwIo3odfV83OM1991HUwgUhfozd4Qwt4Y8zc8koO4FFFuWs9XbTjOrnX-WLt9I3YjkVo-omlAySsA1zVygCibG_ijX6IWy_HvoxKRJ9wga5Y_PA9aWJZvXmn_ibGvaj5zocOrfS42d_VoN_URhYG3JHtSMJcDO9Cr");'>
+                            <div
+                                class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-3 py-1 rounded-full border border-white/10">
+                                <p class="text-white text-xs font-medium tracking-wider">Includes Lunch</p>
+                            </div>
+                        </div>
+                        <div class="p-5 flex flex-col gap-3 flex-1">
+                            <div class="flex justify-between items-start">
+                                <h3
+                                    class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors">
+                                    Full-Day Safari</h3>
+                            </div>
+                            <p class="text-[#cbbc90] text-sm font-normal leading-relaxed line-clamp-2">A complete
+                                12-hour immersion in the wild. Maximize your chances of spotting the big 3.</p>
+                            <div class="my-2 h-px w-full bg-[#493f22]"></div>
+                            <div class="flex justify-between items-center text-sm">
+                                <div class="flex items-center gap-1.5 text-white/80">
+                                    <span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+                                    <span>12 Hours</span>
+                                </div>
+                                <div class="flex items-center gap-1.5 text-white/80">
+                                    <span class="material-symbols-outlined text-[18px] text-primary">restaurant</span>
+                                    <span>Meals Included</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto pt-2 flex items-center justify-between gap-3">
+                                <div class="flex flex-col">
+                                    <span class="text-xs text-[#cbbc90]">Starting from</span>
+                                    <span class="text-lg font-bold text-white">$110 <span
+                                            class="text-xs font-normal text-white/50">/ person</span></span>
+                                </div>
+                                <button
+                                    class="flex-1 cursor-pointer bg-primary hover:bg-[#dca60e] text-background-dark font-bold py-2.5 px-4 rounded-lg transition-colors text-sm flex items-center justify-center gap-2">
+                                    Book Now
+                                    <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4: Private -->
+                    <div
+                        class="flex flex-col bg-surface-dark rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-primary/5 transition-all duration-300 hover:-translate-y-1 group border border-[#3a321d]">
+                        <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover relative"
+                            data-alt="Close up of a wild peacock displaying feathers in Yala"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCcRH-FY0HbzgJm1K2Fs2u2hDbXzLmIbnE78HN27Q8cPa4YCLte0A_0aLX9HmDTtXW_0xt7mjYZATqSsa3wEx09cyt03igvlo2vioLe40yUXYy36dxcB_3exr3wbDL9MJiTkCLsn97MlJPsY95i5i7hGHtTY8Dnb_FKVGlL8_EUcvDhJtbCUwIdgLrTHjbKkAcCCk348HUay6YNi9DaOUjInfJxUrrFyDQ_sKVxaiYcBXFA4URp6YiURVgTOnSpK9djmNE-J8v61-g-");'>
+                        </div>
+                        <div class="p-5 flex flex-col gap-3 flex-1">
+                            <div class="flex justify-between items-start">
+                                <h3
+                                    class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors">
+                                    Private Safari Tours</h3>
+                            </div>
+                            <p class="text-[#cbbc90] text-sm font-normal leading-relaxed line-clamp-2">Exclusive jeep
+                                for you and your family with a dedicated naturalist guide.</p>
+                            <div class="my-2 h-px w-full bg-[#493f22]"></div>
+                            <div class="flex justify-between items-center text-sm">
+                                <div class="flex items-center gap-1.5 text-white/80">
+                                    <span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+                                    <span>4 Hours</span>
+                                </div>
+                                <div class="flex items-center gap-1.5 text-white/80">
+                                    <span class="material-symbols-outlined text-[18px] text-primary">person</span>
+                                    <span>Dedicated Guide</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto pt-2 flex items-center justify-between gap-3">
+                                <div class="flex flex-col">
+                                    <span class="text-xs text-[#cbbc90]">Starting from</span>
+                                    <span class="text-lg font-bold text-white">$80 <span
+                                            class="text-xs font-normal text-white/50">/ person</span></span>
+                                </div>
+                                <button
+                                    class="flex-1 cursor-pointer bg-primary hover:bg-[#dca60e] text-background-dark font-bold py-2.5 px-4 rounded-lg transition-colors text-sm flex items-center justify-center gap-2">
+                                    Book Now
+                                    <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5: Photography -->
+                    <div
+                        class="flex flex-col bg-surface-dark rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-primary/5 transition-all duration-300 hover:-translate-y-1 group border border-[#3a321d]">
+                        <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover relative"
+                            data-alt="Photographer holding a camera with telephoto lens in a safari jeep"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB7lANpd9s2bUY4ONmLBHCL6kx_cKZ7CiCHJDfzvabj5Gj8wMilwdMzGdNEgLEgwEbR4f3oarTy-q1GMrMhosbYM8ioFWbOZKQOhPpcYOWkGaQL5iAoai61n7AgH4iTZLPdLCmo_tz7194-USs0Cv-n4Is3i_jWV6RP2LsnUyit4M6sMICQMYYM3HdaYvEuIrMUhfyh5bkDqAysCqTrSDo-x7nHCmtE59Rq5JuprKSdANZAowBoF6jWK45_09oRlOG2M3iwXUEaFwi_");'>
+                            <div
+                                class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-3 py-1 rounded-full border border-white/10">
+                                <p class="text-primary text-xs font-bold uppercase tracking-wider">For Pros</p>
+                            </div>
+                        </div>
+                        <div class="p-5 flex flex-col gap-3 flex-1">
+                            <div class="flex justify-between items-start">
+                                <h3
+                                    class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors">
+                                    Photography Safari</h3>
+                            </div>
+                            <p class="text-[#cbbc90] text-sm font-normal leading-relaxed line-clamp-2">Dedicated
+                                positioning for the perfect shot. Specialized driver for stability.</p>
+                            <div class="my-2 h-px w-full bg-[#493f22]"></div>
+                            <div class="flex justify-between items-center text-sm">
+                                <div class="flex items-center gap-1.5 text-white/80">
+                                    <span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+                                    <span>Full Day</span>
+                                </div>
+                                <div class="flex items-center gap-1.5 text-white/80">
+                                    <span class="material-symbols-outlined text-[18px] text-primary">camera_alt</span>
+                                    <span>Bean Bags</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto pt-2 flex items-center justify-between gap-3">
+                                <div class="flex flex-col">
+                                    <span class="text-xs text-[#cbbc90]">Starting from</span>
+                                    <span class="text-lg font-bold text-white">$200 <span
+                                            class="text-xs font-normal text-white/50">/ group</span></span>
+                                </div>
+                                <button
+                                    class="flex-1 cursor-pointer bg-primary hover:bg-[#dca60e] text-background-dark font-bold py-2.5 px-4 rounded-lg transition-colors text-sm flex items-center justify-center gap-2">
+                                    Book Now
+                                    <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6: Luxury -->
+                    <div
+                        class="flex flex-col bg-surface-dark rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-primary/5 transition-all duration-300 hover:-translate-y-1 group border border-[#3a321d]">
+                        <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover relative"
+                            data-alt="Luxury tented camp interior with view of nature"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC2tpyVtQ9FSK1TY2Gh3S41Z1BcZZ3_GPywft6K3ivOiI1X6eYYQJa2ELBhIzlKQd0wAn_Tw5ZYGgcqI3WSiSm4VgccVJjJB2ZhBacp6GQS5lVFdGP65ZnwzMYwb47Omj8Eruh3EMmilEc1oIqgM15UGnPQ2OK8yCrHDDFz6ROhmhwc1FGX98vB7dxcQVKTtPJVyXCOK1Mq_DXxniw1Qr5otA0aoH0Ui8JQspmF_LKA_vrjOESN98-VN-lCJRnbVS5F5KCkETyFlO_z");'>
+                            <div
+                                class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-3 py-1 rounded-full border border-white/10">
+                                <p class="text-primary text-xs font-bold uppercase tracking-wider">Premium</p>
+                            </div>
+                        </div>
+                        <div class="p-5 flex flex-col gap-3 flex-1">
+                            <div class="flex justify-between items-start">
+                                <h3
+                                    class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors">
+                                    Luxury Safari</h3>
+                            </div>
+                            <p class="text-[#cbbc90] text-sm font-normal leading-relaxed line-clamp-2">Premium jeep,
+                                gourmet bush breakfast, and a senior naturalist.</p>
+                            <div class="my-2 h-px w-full bg-[#493f22]"></div>
+                            <div class="flex justify-between items-center text-sm">
+                                <div class="flex items-center gap-1.5 text-white/80">
+                                    <span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+                                    <span>5 Hours</span>
+                                </div>
+                                <div class="flex items-center gap-1.5 text-white/80">
+                                    <span class="material-symbols-outlined text-[18px] text-primary">wine_bar</span>
+                                    <span>Gourmet</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto pt-2 flex items-center justify-between gap-3">
+                                <div class="flex flex-col">
+                                    <span class="text-xs text-[#cbbc90]">Starting from</span>
+                                    <span class="text-lg font-bold text-white">$120 <span
+                                            class="text-xs font-normal text-white/50">/ person</span></span>
+                                </div>
+                                <button
+                                    class="flex-1 cursor-pointer bg-primary hover:bg-[#dca60e] text-background-dark font-bold py-2.5 px-4 rounded-lg transition-colors text-sm flex items-center justify-center gap-2">
+                                    Book Now
+                                    <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Simple Footer -->
+        <footer class="bg-[#1a170d] border-t border-[#493f22] text-white py-12 px-4 md:px-40 mt-10">
+            <div class="max-w-[960px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="material-symbols-outlined text-primary">forest</span>
+                        <span class="font-bold text-xl">Yala Safari Services</span>
+                    </div>
+                    <p class="text-[#cbbc90] text-sm leading-relaxed max-w-xs">
+                        Your gateway to the incredible biodiversity of Sri Lanka. Committed to sustainable tourism and
+                        wildlife conservation.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="flex flex-col gap-2 text-[#cbbc90] text-sm">
+                        <li><a class="hover:text-primary transition-colors" href="#">Safaris</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Our Jeeps</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Park Rules</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="flex flex-col gap-2 text-[#cbbc90] text-sm">
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">call</span>
+                            +94 77 123 4567</li>
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">mail</span>
+                            hello@yalasafari.lk</li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-sm">location_on</span> Tissamaharama, Sri Lanka
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="max-w-[960px] mx-auto mt-12 pt-8 border-t border-[#493f22] flex flex-col md:flex-row justify-between items-center text-xs text-[#cbbc90]">
+                <p>© 2023 Yala Safari Services. All rights reserved.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a class="hover:text-white" href="#">Privacy Policy</a>
+                    <a class="hover:text-white" href="#">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

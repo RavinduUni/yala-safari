@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Book Your Yala Safari</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f4c025",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#221e10",
+                        "surface-dark": "#2d2616",
+                        "border-dark": "#493f22",
+                        "input-border": "#685a31"
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111418] dark:text-white overflow-x-hidden min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 w-full bg-[#231e10]/95 backdrop-blur-md border-b border-solid border-border-dark px-6 py-3">
+<div class="max-w-[1280px] mx-auto flex items-center justify-between whitespace-nowrap">
+<div class="flex items-center gap-3 text-white">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined !text-[32px]">landscape</span>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Yala National Park</h2>
+</div>
+<div class="hidden lg:flex flex-1 justify-end gap-8 items-center">
+<div class="flex items-center gap-9">
+<a class="text-white hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Safaris</a>
+<a class="text-white hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Plan Your Trip</a>
+<a class="text-white hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Wildlife</a>
+<a class="text-white hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Contact</a>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary hover:bg-primary/90 transition-colors text-[#231e10] text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">My Bookings</span>
+</button>
+</div>
+<!-- Mobile Menu Icon -->
+<button class="lg:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 w-full max-w-[1280px] mx-auto px-4 py-6 md:px-8 md:py-10">
+<!-- Hero Header -->
+<div class="relative w-full rounded-2xl overflow-hidden min-h-[300px] mb-10 flex flex-col justify-end group">
+<!-- Background Image -->
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Leopard resting on a tree branch in Yala National Park jungle" style='background-image: linear-gradient(0deg, rgba(34, 30, 16, 0.9) 0%, rgba(34, 30, 16, 0.4) 50%, rgba(34, 30, 16, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuA7-zu6qaALfzBauiUmQ5u5zkBVq6ZSk9pkuSSnjKB7ocvPCf28K1JcfyqOTChnGQU_ZuhTUJ09Rgix0ng3uKMqjDnIJ_Kb-CuW3BzoGF1VCXcAYNPvRN04d0kAp1tlvEs_9UyHt6cCDNPR88_ajvHhhVqHyLotLXIiP2mp26vQvW3kql0MbrbT5-OVtyIiCpq-oqkUOEYh0JAwCe-Rje_1X6j5_Er6uSPqMzdmB8i3vYBnqWCDAUEP-4WYWPBAXgdfzvQFCxN7c3NP");'>
+</div>
+<div class="relative z-10 p-8 md:p-12 max-w-3xl">
+<span class="inline-block px-3 py-1 mb-4 rounded-full bg-primary/20 border border-primary/30 text-primary text-xs font-bold uppercase tracking-wider">
+                    Official Booking Partner
+                </span>
+<h1 class="text-4xl md:text-5xl font-bold text-white mb-3 tracking-tight">Secure Your Yala Adventure</h1>
+<p class="text-gray-300 text-lg md:text-xl max-w-xl leading-relaxed">Experience the wild with expert guides. Book your jeep safari today for an unforgettable journey into the heart of Sri Lanka's wildlife.</p>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+<!-- Left Column: Booking Form -->
+<div class="flex-1 w-full flex flex-col gap-10">
+<!-- Section 1: Safari Type -->
+<section>
+<div class="flex items-center gap-3 mb-5">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary text-[#231e10] font-bold text-sm">1</span>
+<h3 class="text-white text-2xl font-bold leading-tight">Choose your adventure</h3>
+</div>
+<div class="flex flex-col gap-4" style="--radio-dot-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(35,30,16)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3ccircle cx=%278%27 cy=%278%27 r=%273%27/%3e%3c/svg%3e');">
+<label class="group cursor-pointer relative flex items-start gap-4 rounded-xl border border-solid border-input-border bg-surface-dark/30 p-5 hover:border-primary/50 transition-all has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+<input checked="" class="mt-1 h-5 w-5 border-2 border-input-border bg-transparent text-transparent checked:border-primary checked:bg-primary checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0" name="safari_type" type="radio" value="morning"/>
+<div class="flex grow flex-col">
+<div class="flex justify-between items-center mb-1">
+<p class="text-white text-lg font-bold">Morning Safari</p>
+<span class="text-primary font-bold">$45<span class="text-sm font-normal text-gray-400">/person</span></span>
+</div>
+<div class="flex items-center gap-2 text-[#cbbc90] text-sm mb-2">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>6:00 AM - 10:00 AM</span>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed">Best for bird watching and experiencing the jungle waking up. Cool weather and active wildlife.</p>
+</div>
+</label>
+<label class="group cursor-pointer relative flex items-start gap-4 rounded-xl border border-solid border-input-border bg-surface-dark/30 p-5 hover:border-primary/50 transition-all has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+<input class="mt-1 h-5 w-5 border-2 border-input-border bg-transparent text-transparent checked:border-primary checked:bg-primary checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0" name="safari_type" type="radio" value="afternoon"/>
+<div class="flex grow flex-col">
+<div class="flex justify-between items-center mb-1">
+<p class="text-white text-lg font-bold">Afternoon Safari</p>
+<span class="text-primary font-bold">$50<span class="text-sm font-normal text-gray-400">/person</span></span>
+</div>
+<div class="flex items-center gap-2 text-[#cbbc90] text-sm mb-2">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>2:00 PM - 6:00 PM</span>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed">Highest chance of spotting leopards. As the sun sets, elusive predators come out to hunt.</p>
+</div>
+</label>
+<label class="group cursor-pointer relative flex items-start gap-4 rounded-xl border border-solid border-input-border bg-surface-dark/30 p-5 hover:border-primary/50 transition-all has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+<input class="mt-1 h-5 w-5 border-2 border-input-border bg-transparent text-transparent checked:border-primary checked:bg-primary checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0" name="safari_type" type="radio" value="fullday"/>
+<div class="flex grow flex-col">
+<div class="flex justify-between items-center mb-1">
+<p class="text-white text-lg font-bold">Full Day Safari</p>
+<span class="text-primary font-bold">$95<span class="text-sm font-normal text-gray-400">/person</span></span>
+</div>
+<div class="flex items-center gap-2 text-[#cbbc90] text-sm mb-2">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>6:00 AM - 6:00 PM</span>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed">The complete experience. Includes breakfast and lunch inside the park. Maximize your sightings.</p>
+</div>
+</label>
+</div>
+</section>
+<!-- Section 2: Date & Details -->
+<section>
+<div class="flex items-center gap-3 mb-5">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary text-[#231e10] font-bold text-sm">2</span>
+<h3 class="text-white text-2xl font-bold leading-tight">Date &amp; Preferences</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Date Picker -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-gray-300">Select Date</label>
+<div class="relative">
+<input class="w-full h-14 rounded-xl bg-transparent border border-input-border text-white px-4 focus:border-primary focus:ring-1 focus:ring-primary outline-none [color-scheme:dark]" placeholder="Select date" type="date"/>
+</div>
+</div>
+<!-- Jeep Type -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-gray-300">Jeep Preference</label>
+<div class="flex h-14 w-full rounded-xl bg-surface-dark border border-input-border p-1">
+<label class="flex-1 cursor-pointer">
+<input class="peer sr-only" name="jeep_type" type="radio" value="shared"/>
+<div class="h-full w-full flex items-center justify-center rounded-lg text-gray-400 font-medium transition-all peer-checked:bg-primary peer-checked:text-[#231e10] peer-checked:font-bold">
+                                        Shared
+                                    </div>
+</label>
+<label class="flex-1 cursor-pointer">
+<input checked="" class="peer sr-only" name="jeep_type" type="radio" value="private"/>
+<div class="h-full w-full flex items-center justify-center rounded-lg text-gray-400 font-medium transition-all peer-checked:bg-primary peer-checked:text-[#231e10] peer-checked:font-bold">
+                                        Private
+                                    </div>
+</label>
+</div>
+<p class="text-xs text-gray-500 mt-1">Private jeeps offer exclusive use of the vehicle.</p>
+</div>
+</div>
+</section>
+<!-- Section 3: Guests -->
+<section>
+<div class="flex items-center gap-3 mb-5">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary text-[#231e10] font-bold text-sm">3</span>
+<h3 class="text-white text-2xl font-bold leading-tight">Who is coming?</h3>
+</div>
+<div class="flex flex-col md:flex-row gap-4">
+<!-- Adults -->
+<div class="flex-1 flex items-center justify-between p-4 rounded-xl border border-input-border bg-surface-dark/20">
+<div>
+<p class="text-white font-medium">Adults</p>
+<p class="text-xs text-gray-400">Age 12+</p>
+</div>
+<div class="flex items-center gap-3">
+<button class="size-8 rounded-full border border-input-border text-white flex items-center justify-center hover:bg-white/5 disabled:opacity-50">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="text-white w-4 text-center font-bold">2</span>
+<button class="size-8 rounded-full bg-primary text-[#231e10] flex items-center justify-center hover:bg-primary/90">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+<!-- Children -->
+<div class="flex-1 flex items-center justify-between p-4 rounded-xl border border-input-border bg-surface-dark/20">
+<div>
+<p class="text-white font-medium">Children</p>
+<p class="text-xs text-gray-400">Age 3-11</p>
+</div>
+<div class="flex items-center gap-3">
+<button class="size-8 rounded-full border border-input-border text-white flex items-center justify-center hover:bg-white/5 disabled:opacity-50">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="text-white w-4 text-center font-bold">0</span>
+<button class="size-8 rounded-full bg-primary text-[#231e10] flex items-center justify-center hover:bg-primary/90">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Pickup -->
+<section>
+<div class="flex items-center gap-3 mb-5">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary text-[#231e10] font-bold text-sm">4</span>
+<h3 class="text-white text-2xl font-bold leading-tight">Pickup Location</h3>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-gray-300">Hotel Name or Area</label>
+<div class="relative group">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-gray-400 group-focus-within:text-primary">location_on</span>
+</div>
+<input class="w-full h-14 pl-12 rounded-xl bg-transparent border border-input-border text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none placeholder:text-gray-600" placeholder="e.g. Jetwing Yala" type="text"/>
+</div>
+<p class="text-xs text-[#cbbc90]">Free pickup from hotels within 10km of the park entrance.</p>
+</div>
+</section>
+</div>
+<!-- Right Column: Order Summary (Sticky) -->
+<div class="w-full lg:w-[400px] shrink-0 lg:sticky lg:top-24">
+<div class="bg-surface-dark border border-border-dark rounded-2xl p-6 shadow-2xl">
+<h4 class="text-xl font-bold text-white mb-6 pb-4 border-b border-border-dark">Booking Summary</h4>
+<div class="flex flex-col gap-4 mb-6">
+<div class="flex justify-between items-start">
+<span class="text-gray-400 text-sm">Safari Type</span>
+<span class="text-white font-medium text-right">Morning Safari</span>
+</div>
+<div class="flex justify-between items-start">
+<span class="text-gray-400 text-sm">Date</span>
+<span class="text-white font-medium text-right">Oct 24, 2023</span>
+</div>
+<div class="flex justify-between items-start">
+<span class="text-gray-400 text-sm">Guests</span>
+<span class="text-white font-medium text-right">2 Adults</span>
+</div>
+<div class="flex justify-between items-start">
+<span class="text-gray-400 text-sm">Jeep</span>
+<span class="text-white font-medium text-right">Private Jeep <span class="text-xs text-primary ml-1">(+$30)</span></span>
+</div>
+</div>
+<div class="flex flex-col gap-3 py-4 border-t border-b border-border-dark mb-6">
+<div class="flex justify-between items-center text-sm">
+<span class="text-gray-400">Adults (2 x $45)</span>
+<span class="text-gray-300">$90.00</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-gray-400">Private Jeep Fee</span>
+<span class="text-gray-300">$30.00</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-gray-400">Taxes &amp; Fees</span>
+<span class="text-gray-300">$12.50</span>
+</div>
+</div>
+<div class="flex justify-between items-end mb-8">
+<div>
+<p class="text-sm text-gray-400">Total Price</p>
+<p class="text-xs text-[#cbbc90]">USD</p>
+</div>
+<p class="text-3xl font-bold text-white">$132.50</p>
+</div>
+<button class="w-full h-12 bg-primary hover:bg-primary/90 text-[#231e10] rounded-xl font-bold text-base transition-all transform hover:scale-[1.02] active:scale-[0.98] shadow-[0_0_20px_rgba(244,192,37,0.3)] mb-4">
+                        Book Now
+                    </button>
+<div class="flex items-center justify-center gap-4">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[#cbbc90] text-lg">verified_user</span>
+<span class="text-[10px] md:text-xs text-gray-400 uppercase tracking-wide font-medium">Secure Payment</span>
+</div>
+<div class="w-1 h-1 rounded-full bg-gray-600"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[#cbbc90] text-lg">bolt</span>
+<span class="text-[10px] md:text-xs text-gray-400 uppercase tracking-wide font-medium">Instant Confirm</span>
+</div>
+</div>
+</div>
+<!-- Help Box -->
+<div class="mt-6 p-4 rounded-xl border border-dashed border-input-border bg-transparent flex gap-3 items-start">
+<span class="material-symbols-outlined text-gray-400">support_agent</span>
+<div>
+<p class="text-white text-sm font-medium mb-1">Need help booking?</p>
+<p class="text-xs text-gray-400">Call our local experts 24/7 at <a class="text-primary hover:underline" href="#">+94 77 123 4567</a></p>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>
