@@ -1,7 +1,6 @@
 import { notFound } from 'next/navigation'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import BookingForm from '@/components/BookingForm'
 import { getPackageBySlug, safariPackages } from '@/config/safari-config'
 import Link from 'next/link'
 
@@ -291,35 +290,60 @@ export default function SafariDetailPage({ params }: { params: { slug: string } 
               </section>
             </div>
 
-            {/* Right Column - Booking Form */}
+            {/* Right Column - Booking Card */}
             <div className="lg:col-span-1">
-              <BookingForm packageTitle={pkg.title} pricingTiers={pkg.pricingTiers} />
-              
-              {/* Contact Card */}
-              <div className="bg-surface-dark border border-[#493f22] rounded-xl p-6 mt-6">
-                <h3 className="text-white text-lg font-bold mb-3">Need Help?</h3>
-                <p className="text-[#cbbc90] text-sm mb-4">
-                  Our team is available 24/7 to answer questions and help plan your perfect safari.
-                </p>
-                <div className="space-y-2">
-                  <a href="https://wa.me/94123456789" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary hover:text-[#dca60e] transition-colors">
-                    <span className="material-symbols-outlined text-[20px]">phone</span>
-                    <span className="text-sm">+94 77 123 4567</span>
-                  </a>
-                  <a href="mailto:info@yalasafari.com" className="flex items-center gap-2 text-primary hover:text-[#dca60e] transition-colors">
-                    <span className="material-symbols-outlined text-[20px]">email</span>
-                    <span className="text-sm">info@yalasafari.com</span>
-                  </a>
+              <div className="sticky top-24 space-y-6">
+                {/* Book Safari CTA */}
+                <div className="bg-gradient-to-br from-primary/10 to-background-dark border-2 border-primary/30 rounded-xl p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="material-symbols-outlined text-primary text-[24px]">event_available</span>
+                    <h3 className="text-white text-xl font-bold">Ready to Book?</h3>
+                  </div>
+                  <p className="text-[#cbbc90] text-sm mb-4">
+                    Secure your spot for this unforgettable safari experience. Our team will confirm availability within 24 hours.
+                  </p>
+                  <div className="bg-background-dark/50 rounded-lg p-4 mb-4">
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="text-[#cbbc90] text-sm">Starting from</span>
+                      <span className="text-primary text-2xl font-bold">${pkg.startingPrice}</span>
+                    </div>
+                    <p className="text-white/60 text-xs">per person (group discounts available)</p>
+                  </div>
+                  <Link href={`/book?safari=${pkg.slug}`}>
+                    <button className="w-full bg-primary hover:bg-[#dca60e] text-[#231e10] font-bold py-4 px-6 rounded-lg transition-all transform hover:scale-105 shadow-lg shadow-primary/20 flex items-center justify-center gap-2">
+                      <span className="material-symbols-outlined text-[24px]">calendar_month</span>
+                      <span className="text-lg">Book This Safari</span>
+                    </button>
+                  </Link>
+                  <p className="text-white/50 text-xs text-center mt-3">Free cancellation up to 48 hours</p>
                 </div>
-              </div>
+                
+                {/* Contact Card */}
+                <div className="bg-surface-dark border border-[#493f22] rounded-xl p-6">
+                  <h3 className="text-white text-lg font-bold mb-3">Need Help?</h3>
+                  <p className="text-[#cbbc90] text-sm mb-4">
+                    Our team is available 24/7 to answer questions and help plan your perfect safari.
+                  </p>
+                  <div className="space-y-2">
+                    <a href="https://wa.me/94123456789" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary hover:text-[#dca60e] transition-colors">
+                      <span className="material-symbols-outlined text-[20px]">phone</span>
+                      <span className="text-sm">+94 77 123 4567</span>
+                    </a>
+                    <a href="mailto:info@yalasafari.com" className="flex items-center gap-2 text-primary hover:text-[#dca60e] transition-colors">
+                      <span className="material-symbols-outlined text-[20px]">email</span>
+                      <span className="text-sm">info@yalasafari.com</span>
+                    </a>
+                  </div>
+                </div>
 
-              {/* Back to Services */}
-              <Link href="/services">
-                <button className="w-full mt-6 bg-surface-dark hover:bg-[#2a241a] border border-[#493f22] text-white font-medium py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2">
-                  <span className="material-symbols-outlined text-[20px]">arrow_back</span>
-                  Browse All Safaris
-                </button>
-              </Link>
+                {/* Back to Services */}
+                <Link href="/services">
+                  <button className="w-full bg-surface-dark hover:bg-[#2a241a] border border-[#493f22] text-white font-medium py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2 mt-4">
+                    <span className="material-symbols-outlined text-[20px]">arrow_back</span>
+                    Browse All Safaris
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
