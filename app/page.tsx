@@ -8,7 +8,7 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative flex min-h-[85vh] flex-col justify-center items-center overflow-hidden">
+      <section className="relative flex min-h-screen flex-col justify-center items-center overflow-hidden">
         <div 
           className="absolute inset-0 z-0 h-full w-full bg-cover bg-center bg-no-repeat"
           data-alt="Majestic leopard resting on a tree branch in Yala National Park"
@@ -220,118 +220,158 @@ export default function Home() {
             <h2 className="text-[#111418] dark:text-white text-3xl font-bold leading-tight tracking-[-0.015em]">
               Featured Packages
             </h2>
-            <Link href="/pricing" className="hidden sm:flex items-center gap-1 text-primary font-bold hover:underline">
+            <Link href="/services" className="hidden sm:flex items-center gap-1 text-primary font-bold hover:underline">
               View All Packages <span className="material-symbols-outlined text-sm">arrow_forward</span>
             </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Package 1 */}
-            <div className="flex flex-col bg-white dark:bg-[#2c2614] rounded-xl overflow-hidden border border-[#e6e8eb] dark:border-[#493f22]">
+            {/* Package 1 - Standard Morning Safari */}
+            <div className="flex flex-col bg-white dark:bg-[#2c2614] rounded-xl overflow-hidden border border-[#e6e8eb] dark:border-[#493f22] hover:shadow-xl transition-shadow duration-300 group">
               <div 
-                className="relative h-48 bg-cover bg-center"
-                data-alt="Morning sunrise over a lake in Yala"
+                className="relative h-56 bg-cover bg-center"
+                data-alt="Morning sunrise safari in Yala"
                 style={{
-                  backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuDcTsAEr0Q7NcrON6N-mXhcmDr4R_dLjzZRHNwXgt2CwXvTxE8VPj2Y6HG8Ihuq2f9Uq8mjnxv5P3xrh2mLYR1YsnuQNmrsWkCSSnWMs5shIuBwGjuaRozhm6g5DR31lrujraCM4zLKqjAcpGzi5irZ-mP_ggXTr0pArG0FQ_1KAr8RApFD5czISotIuiQ6UjzxPoEY8IMuQYqpvlTtd7KQvPxUPbh9k24iAw1YNk2FP9R7dxclEwXYd9-8Uf2g3rSsslutOmKgOOOm")`
+                  backgroundImage: `url("https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80")`
                 }}
               >
-                <div className="absolute top-3 right-3 bg-primary text-[#231e10] text-xs font-bold px-3 py-1 rounded-full">
+                <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-3 py-1 rounded-full border border-white/10">
+                  <p className="text-xs font-medium uppercase tracking-wider text-white/90">Morning Safari</p>
+                </div>
+              </div>
+              <div className="p-5 flex flex-col gap-3 flex-1">
+                <div className="flex justify-between items-start">
+                  <h3 className="text-[#111418] dark:text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors">
+                    Standard Morning Safari
+                  </h3>
+                </div>
+                <p className="text-[#637588] dark:text-[#cbbc90] text-sm font-normal leading-relaxed">
+                  Classic early morning safari for leopard sightings, elephant herds, and diverse birdlife during optimal wildlife activity hours.
+                </p>
+                <div className="my-2 h-px w-full bg-[#e6e8eb] dark:bg-[#493f22]" />
+                <div className="flex justify-between items-center text-sm">
+                  <div className="flex items-center gap-1.5 text-[#637588] dark:text-white/80">
+                    <span className="material-symbols-outlined text-[18px] text-primary">schedule</span>
+                    <span>4.5 Hours</span>
+                  </div>
+                  <div className="flex items-center gap-1.5 text-[#637588] dark:text-white/80">
+                    <span className="material-symbols-outlined text-[18px] text-primary">groups</span>
+                    <span>Private</span>
+                  </div>
+                </div>
+                <div className="mt-auto pt-2 flex items-center justify-between gap-3">
+                  <div className="flex flex-col">
+                    <span className="text-xs text-[#637588] dark:text-[#cbbc90]">Starting from</span>
+                    <span className="text-lg font-bold text-[#111418] dark:text-white">
+                      $85 <span className="text-xs font-normal text-gray-500 dark:text-white/50">/ person</span>
+                    </span>
+                  </div>
+                  <Link href="/services/standard-morning-safari" className="flex-1">
+                    <button className="w-full cursor-pointer bg-primary hover:bg-[#dca60e] text-[#231e10] font-bold py-2.5 px-4 rounded-lg transition-colors text-sm flex items-center justify-center gap-2">
+                      View Details
+                      <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Package 2 - Standard Afternoon Safari */}
+            <div className="flex flex-col bg-white dark:bg-[#2c2614] rounded-xl overflow-hidden border border-[#e6e8eb] dark:border-[#493f22] hover:shadow-xl transition-shadow duration-300 group">
+              <div 
+                className="relative h-56 bg-cover bg-center"
+                data-alt="Afternoon sunset safari in Yala"
+                style={{
+                  backgroundImage: `url("https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&q=80")`
+                }}
+              >
+                <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-3 py-1 rounded-full border border-white/10">
+                  <p className="text-xs font-medium uppercase tracking-wider text-white/90">Afternoon Safari</p>
+                </div>
+              </div>
+              <div className="p-5 flex flex-col gap-3 flex-1">
+                <div className="flex justify-between items-start">
+                  <h3 className="text-[#111418] dark:text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors">
+                    Standard Afternoon Safari
+                  </h3>
+                </div>
+                <p className="text-[#637588] dark:text-[#cbbc90] text-sm font-normal leading-relaxed">
+                  Afternoon wildlife viewing with spectacular golden hour light, ideal for photography and observing animals at waterholes.
+                </p>
+                <div className="my-2 h-px w-full bg-[#e6e8eb] dark:bg-[#493f22]" />
+                <div className="flex justify-between items-center text-sm">
+                  <div className="flex items-center gap-1.5 text-[#637588] dark:text-white/80">
+                    <span className="material-symbols-outlined text-[18px] text-primary">schedule</span>
+                    <span>4.5 Hours</span>
+                  </div>
+                  <div className="flex items-center gap-1.5 text-[#637588] dark:text-white/80">
+                    <span className="material-symbols-outlined text-[18px] text-primary">groups</span>
+                    <span>Private</span>
+                  </div>
+                </div>
+                <div className="mt-auto pt-2 flex items-center justify-between gap-3">
+                  <div className="flex flex-col">
+                    <span className="text-xs text-[#637588] dark:text-[#cbbc90]">Starting from</span>
+                    <span className="text-lg font-bold text-[#111418] dark:text-white">
+                      $80 <span className="text-xs font-normal text-gray-500 dark:text-white/50">/ person</span>
+                    </span>
+                  </div>
+                  <Link href="/services/standard-afternoon-safari" className="flex-1">
+                    <button className="w-full cursor-pointer bg-primary hover:bg-[#dca60e] text-[#231e10] font-bold py-2.5 px-4 rounded-lg transition-colors text-sm flex items-center justify-center gap-2">
+                      View Details
+                      <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Package 3 - Ultimate Full-Day Safari */}
+            <div className="flex flex-col bg-white dark:bg-[#2c2614] rounded-xl overflow-hidden border border-[#e6e8eb] dark:border-[#493f22] hover:shadow-xl transition-shadow duration-300 group">
+              <div 
+                className="relative h-56 bg-cover bg-center"
+                data-alt="Full day safari experience in Yala"
+                style={{
+                  backgroundImage: `url("https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&q=80")`
+                }}
+              >
+                <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-3 py-1 rounded-full border border-white/10">
+                  <p className="text-xs font-medium uppercase tracking-wider text-white/90">Full-Day Safari</p>
+                </div>
+                <div className="absolute top-3 left-3 bg-primary text-[#231e10] text-xs font-bold px-3 py-1 rounded-full">
                   Most Popular
                 </div>
               </div>
-              <div className="p-6 flex flex-col flex-1">
-                <div className="flex justify-between items-start mb-2">
-                  <h3 className="text-lg font-bold text-[#111418] dark:text-white">Morning Safari</h3>
-                  <span className="text-primary font-bold">
-                    $60<span className="text-xs font-normal text-gray-500 dark:text-gray-400">/pp</span>
-                  </span>
+              <div className="p-5 flex flex-col gap-3 flex-1">
+                <div className="flex justify-between items-start">
+                  <h3 className="text-[#111418] dark:text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors">
+                    Ultimate Full-Day Safari
+                  </h3>
                 </div>
-                <p className="text-sm text-[#637588] dark:text-[#cbbc90] mb-4">
-                  Catch the jungle waking up. Best time for bird watching and bear sightings.
+                <p className="text-[#637588] dark:text-[#cbbc90] text-sm font-normal leading-relaxed">
+                  Complete 12-hour immersive safari from dawn to dusk. Includes breakfast, lunch, and comprehensive coverage of all zones.
                 </p>
-                <div className="mt-auto space-y-3">
-                  <div className="flex items-center gap-2 text-xs text-[#637588] dark:text-[#cbbc90]">
-                    <span className="material-symbols-outlined text-sm">schedule</span> 4 Hours (5:30 AM Start)
+                <div className="my-2 h-px w-full bg-[#e6e8eb] dark:bg-[#493f22]" />
+                <div className="flex justify-between items-center text-sm">
+                  <div className="flex items-center gap-1.5 text-[#637588] dark:text-white/80">
+                    <span className="material-symbols-outlined text-[18px] text-primary">schedule</span>
+                    <span>12 Hours</span>
                   </div>
-                  <div className="flex items-center gap-2 text-xs text-[#637588] dark:text-[#cbbc90]">
-                    <span className="material-symbols-outlined text-sm">local_cafe</span> Breakfast Included
+                  <div className="flex items-center gap-1.5 text-[#637588] dark:text-white/80">
+                    <span className="material-symbols-outlined text-[18px] text-primary">groups</span>
+                    <span>Private</span>
                   </div>
-                  <Link href="/book">
-                    <button className="w-full mt-4 py-2 rounded-lg border border-primary text-primary hover:bg-primary hover:text-[#231e10] transition-colors font-bold text-sm">
-                      Book Now
-                    </button>
-                  </Link>
                 </div>
-              </div>
-            </div>
-
-            {/* Package 2 */}
-            <div className="flex flex-col bg-white dark:bg-[#2c2614] rounded-xl overflow-hidden border border-[#e6e8eb] dark:border-[#493f22]">
-              <div 
-                className="relative h-48 bg-cover bg-center"
-                data-alt="Jeep driving on a dirt road during sunset"
-                style={{
-                  backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuCiVre1Ti2DF2JjraYQMLWPj84PQPyoC5-okIJMtwRHi6Crr-eVuex2yVvQEbVju0NciGFC-BEICTQLsOs5p2o0MMioWaqZH_pI3W3tnKC8AuOUJQfTRaa5LJFB9jRAbf7rkzJ55gtgoheOYJENFRFMd2krZPtib_22XNMfKG4FPx9tslmHSu0BPFhvAcTKqjcYGVpIZDppgl7Fvt5H6Wu18rzyn4y-kdPdWipgvHNLUflcCjEYBJDChZIQ4I9ep88hrZzLN7bSkrB4")`
-                }}
-              />
-              <div className="p-6 flex flex-col flex-1">
-                <div className="flex justify-between items-start mb-2">
-                  <h3 className="text-lg font-bold text-[#111418] dark:text-white">Full Day Adventure</h3>
-                  <span className="text-primary font-bold">
-                    $110<span className="text-xs font-normal text-gray-500 dark:text-gray-400">/pp</span>
-                  </span>
-                </div>
-                <p className="text-sm text-[#637588] dark:text-[#cbbc90] mb-4">
-                  Immerse yourself completely. Explore deep into the park's various zones.
-                </p>
-                <div className="mt-auto space-y-3">
-                  <div className="flex items-center gap-2 text-xs text-[#637588] dark:text-[#cbbc90]">
-                    <span className="material-symbols-outlined text-sm">schedule</span> 12 Hours (6:00 AM Start)
+                <div className="mt-auto pt-2 flex items-center justify-between gap-3">
+                  <div className="flex flex-col">
+                    <span className="text-xs text-[#637588] dark:text-[#cbbc90]">Starting from</span>
+                    <span className="text-lg font-bold text-[#111418] dark:text-white">
+                      $165 <span className="text-xs font-normal text-gray-500 dark:text-white/50">/ person</span>
+                    </span>
                   </div>
-                  <div className="flex items-center gap-2 text-xs text-[#637588] dark:text-[#cbbc90]">
-                    <span className="material-symbols-outlined text-sm">restaurant</span> Picnic Lunch Included
-                  </div>
-                  <Link href="/book">
-                    <button className="w-full mt-4 py-2 rounded-lg border border-primary text-primary hover:bg-primary hover:text-[#231e10] transition-colors font-bold text-sm">
-                      Book Now
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Package 3 */}
-            <div className="flex flex-col bg-white dark:bg-[#2c2614] rounded-xl overflow-hidden border border-[#e6e8eb] dark:border-[#493f22]">
-              <div 
-                className="relative h-48 bg-cover bg-center"
-                data-alt="Luxury tent interior with comfortable bed"
-                style={{
-                  backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuD1OMwtdp0dt-sGOw_NkwtxhawMXlreeULqxZldvblBS52RetEBHQDALJ0xUmFDP8oXoh-kJHIl_GC7keOAG6_c54FUVFTCBJ5LYeuR-QTPmJXK04t2lLUnuRKKvPgOiAU6hDGP4l46YkjhbDei0uElzDdTAyKkvBrJXKrbGGOZJLd55nX3pycUsMcxhfQQ9M80ErzvsDtyvgFJcFAn87RR2OtSvlHI6wD4sTG9onRklsIj2ZGbjt0FHupDEVeZAsPVv6q57Ztwb_Kg")`
-                }}
-              >
-                <div className="absolute top-3 right-3 bg-[#231e10] text-primary text-xs font-bold px-3 py-1 rounded-full border border-primary">
-                  Premium
-                </div>
-              </div>
-              <div className="p-6 flex flex-col flex-1">
-                <div className="flex justify-between items-start mb-2">
-                  <h3 className="text-lg font-bold text-[#111418] dark:text-white">Luxury Camping</h3>
-                  <span className="text-primary font-bold">
-                    $250<span className="text-xs font-normal text-gray-500 dark:text-gray-400">/night</span>
-                  </span>
-                </div>
-                <p className="text-sm text-[#637588] dark:text-[#cbbc90] mb-4">
-                  Sleep under the stars in comfort. Includes night walk and BBQ dinner.
-                </p>
-                <div className="mt-auto space-y-3">
-                  <div className="flex items-center gap-2 text-xs text-[#637588] dark:text-[#cbbc90]">
-                    <span className="material-symbols-outlined text-sm">bed</span> Luxury Tent
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#637588] dark:text-[#cbbc90]">
-                    <span className="material-symbols-outlined text-sm">local_fire_department</span> BBQ & Bonfire
-                  </div>
-                  <Link href="/book">
-                    <button className="w-full mt-4 py-2 rounded-lg border border-primary text-primary hover:bg-primary hover:text-[#231e10] transition-colors font-bold text-sm">
-                      Book Now
+                  <Link href="/services/ultimate-full-day-safari" className="flex-1">
+                    <button className="w-full cursor-pointer bg-primary hover:bg-[#dca60e] text-[#231e10] font-bold py-2.5 px-4 rounded-lg transition-colors text-sm flex items-center justify-center gap-2">
+                      View Details
+                      <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
                     </button>
                   </Link>
                 </div>
@@ -341,16 +381,293 @@ export default function Home() {
         </div>
       </section>
 
+      {/* What Makes YalaSriLanka.com Different Section */}
+      <section className="py-16 px-4 md:px-10 lg:px-40 bg-[#f8f6f0] dark:bg-[#1c180d]">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-12 items-center">
+            <div className="flex-1">
+              <div className="mb-6">
+                <span className="text-primary font-bold tracking-widest text-xs uppercase">Your Trusted Safari Partner</span>
+                <h2 className="text-[#111418] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] mt-2">
+                  What Makes YalaSriLanka.com Different
+                </h2>
+              </div>
+              <p className="text-[#637588] dark:text-[#cbbc90] text-base leading-relaxed mb-6">
+                We're more than just a booking platform. YalaSriLanka.com is your comprehensive safari guide and trusted content hub for everything related to Yala National Park. Our mission is to educate, inspire, and connect you with the wild heart of Sri Lanka.
+              </p>
+              <div className="space-y-5">
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                      <span className="material-symbols-outlined text-primary text-2xl">school</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-[#111418] dark:text-white font-bold text-lg mb-1">Expert Knowledge Hub</h4>
+                    <p className="text-[#637588] dark:text-[#cbbc90] text-sm leading-relaxed">
+                      In-depth wildlife guides, behavioral insights, and photography tips from experienced naturalists. Learn before you explore.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                      <span className="material-symbols-outlined text-primary text-2xl">eco</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-[#111418] dark:text-white font-bold text-lg mb-1">Ethical Tourism Champions</h4>
+                    <p className="text-[#637588] dark:text-[#cbbc90] text-sm leading-relaxed">
+                      We prioritize wildlife welfare and sustainable practices. Every safari supports conservation efforts and local communities.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                      <span className="material-symbols-outlined text-primary text-2xl">verified</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-[#111418] dark:text-white font-bold text-lg mb-1">Trust & Transparency</h4>
+                    <p className="text-[#637588] dark:text-[#cbbc90] text-sm leading-relaxed">
+                      Honest pricing, detailed itineraries, and real guest reviews. No hidden fees, no surprises—just authentic safari experiences.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                      <span className="material-symbols-outlined text-primary text-2xl">support_agent</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-[#111418] dark:text-white font-bold text-lg mb-1">24/7 Support & Guidance</h4>
+                    <p className="text-[#637588] dark:text-[#cbbc90] text-sm leading-relaxed">
+                      From planning to post-safari, we're here to help. Access travel tips, packing lists, and expert advice anytime.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex-1 w-full">
+              <div className="relative">
+                <div 
+                  className="rounded-2xl overflow-hidden shadow-2xl h-[500px] bg-cover bg-center transform hover:scale-105 transition-transform duration-500"
+                  data-alt="Guide showing wildlife tracks to tourists in Yala"
+                  style={{
+                    backgroundImage: `url("https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80")`
+                  }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <div className="bg-white/95 dark:bg-[#231e10]/95 backdrop-blur-sm rounded-xl p-4">
+                      <div className="flex items-center gap-3 mb-2">
+                        <span className="material-symbols-outlined text-primary text-3xl">military_tech</span>
+                        <div>
+                          <p className="text-[#111418] dark:text-white font-bold text-lg">Certified Excellence</p>
+                          <p className="text-xs text-[#637588] dark:text-[#cbbc90]">Award-winning safari experiences</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute -top-6 -right-6 bg-primary text-[#231e10] rounded-full w-24 h-24 flex flex-col items-center justify-center font-black shadow-lg">
+                  <span className="text-3xl">10+</span>
+                  <span className="text-xs">Years</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Yala Safari Experience Section */}
+      <section className="py-16 px-4 md:px-10 lg:px-40 bg-background-light dark:bg-background-dark">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="text-center mb-12">
+            <span className="text-primary font-bold tracking-widest text-xs uppercase">Experience The Adventure</span>
+            <h2 className="text-[#111418] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] mt-2 mb-4">
+              The Yala Safari Experience
+            </h2>
+            <p className="text-[#637588] dark:text-[#cbbc90] text-lg max-w-3xl mx-auto">
+              Step into a specially modified 4x4 safari jeep and embark on an unforgettable journey through one of Asia's most spectacular wildlife sanctuaries. Every safari is a unique adventure guided by expert driver-trackers who know every trail, call, and hideout in the jungle.
+            </p>
+          </div>
+
+          {/* Safari Types Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            {/* Morning Safari */}
+            <div className="group relative overflow-hidden rounded-2xl bg-white dark:bg-[#2c2614] border border-[#e6e8eb] dark:border-[#493f22] hover:shadow-2xl transition-all duration-300">
+              <div 
+                className="h-64 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
+                data-alt="Golden sunrise over Yala with silhouette of animals"
+                style={{
+                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80")`
+                }}
+              >
+                <div className="absolute top-4 left-4">
+                  <span className="bg-primary text-[#231e10] px-4 py-2 rounded-full text-xs font-bold">5:30 AM - 10:00 AM</span>
+                </div>
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="material-symbols-outlined text-primary text-2xl">wb_twilight</span>
+                  <h3 className="text-[#111418] dark:text-white text-2xl font-bold">Morning Safari</h3>
+                </div>
+                <p className="text-[#637588] dark:text-[#cbbc90] text-sm leading-relaxed mb-4">
+                  Witness the jungle awakening as the first rays of sunlight pierce through the canopy. Morning safaris offer the best opportunities for leopard sightings, as these elusive cats are most active during the cool dawn hours. Watch sloth bears foraging for termites, hear the symphony of endemic birds, and capture stunning photography in the golden morning light.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold">Best for Leopards</span>
+                  <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold">Bird Watching</span>
+                  <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold">Cool Weather</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Afternoon Safari */}
+            <div className="group relative overflow-hidden rounded-2xl bg-white dark:bg-[#2c2614] border border-[#e6e8eb] dark:border-[#493f22] hover:shadow-2xl transition-all duration-300">
+              <div 
+                className="h-64 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
+                data-alt="Safari jeep at sunset with dramatic orange sky"
+                style={{
+                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&q=80")`
+                }}
+              >
+                <div className="absolute top-4 left-4">
+                  <span className="bg-primary text-[#231e10] px-4 py-2 rounded-full text-xs font-bold">2:00 PM - 6:30 PM</span>
+                </div>
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="material-symbols-outlined text-primary text-2xl">wb_sunny</span>
+                  <h3 className="text-[#111418] dark:text-white text-2xl font-bold">Afternoon Safari</h3>
+                </div>
+                <p className="text-[#637588] dark:text-[#cbbc90] text-sm leading-relaxed mb-4">
+                  Experience the magic of dusk as the park transforms in the golden hour. Afternoon safaris provide spectacular sunset photography opportunities and increased wildlife activity as temperatures cool. Watch elephant herds gathering at waterholes, predators beginning their evening hunts, and the sky painted in brilliant oranges and purples.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold">Sunset Views</span>
+                  <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold">Elephants</span>
+                  <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold">Photography</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Half-Day Safari */}
+            <div className="group relative overflow-hidden rounded-2xl bg-white dark:bg-[#2c2614] border border-[#e6e8eb] dark:border-[#493f22] hover:shadow-2xl transition-all duration-300">
+              <div 
+                className="h-64 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
+                data-alt="Wildlife tracker observing animals with binoculars"
+                style={{
+                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&q=80")`
+                }}
+              >
+                <div className="absolute top-4 left-4">
+                  <span className="bg-primary text-[#231e10] px-4 py-2 rounded-full text-xs font-bold">6:00 AM - 1:00 PM</span>
+                </div>
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="material-symbols-outlined text-primary text-2xl">schedule</span>
+                  <h3 className="text-[#111418] dark:text-white text-2xl font-bold">Half-Day Safari</h3>
+                </div>
+                <p className="text-[#637588] dark:text-[#cbbc90] text-sm leading-relaxed mb-4">
+                  Perfect for serious wildlife enthusiasts, the 7-hour half-day safari allows deeper exploration into remote zones rarely accessed on shorter tours. Enjoy a wilderness picnic breakfast while observing wildlife at waterholes. Your expert tracker has time to follow animal movements, track leopards methodically, and share extensive knowledge about ecology and behavior.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold">Deep Exploration</span>
+                  <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold">Breakfast Included</span>
+                  <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold">Remote Zones</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Full-Day Safari */}
+            <div className="group relative overflow-hidden rounded-2xl bg-white dark:bg-[#2c2614] border border-[#e6e8eb] dark:border-[#493f22] hover:shadow-2xl transition-all duration-300">
+              <div 
+                className="h-64 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
+                data-alt="Leopard resting on a rock at sunset"
+                style={{
+                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&q=80")`
+                }}
+              >
+                <div className="absolute top-4 left-4">
+                  <span className="bg-primary text-[#231e10] px-4 py-2 rounded-full text-xs font-bold">5:30 AM - 6:00 PM</span>
+                </div>
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="material-symbols-outlined text-primary text-2xl">all_inclusive</span>
+                  <h3 className="text-[#111418] dark:text-white text-2xl font-bold">Full-Day Safari</h3>
+                </div>
+                <p className="text-[#637588] dark:text-[#cbbc90] text-sm leading-relaxed mb-4">
+                  The ultimate immersive experience spanning 12 hours from dawn to dusk. Witness the complete daily cycle of jungle life—morning awakening, midday lull, and evening revival. Cover all accessible zones, maximize your chances of encountering the "Big Three" (leopard, elephant, sloth bear), and enjoy both breakfast and lunch in the wilderness. Perfect for photographers and dedicated wildlife lovers.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold">Complete Coverage</span>
+                  <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold">2 Meals Included</span>
+                  <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold">Big Three</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Expert Tracker Section */}
+          <div className="bg-gradient-to-r from-[#231e10] to-[#3d3418] dark:from-[#1c180d] dark:to-[#2c2614] rounded-2xl overflow-hidden">
+            <div className="flex flex-col md:flex-row items-center gap-8 p-8 md:p-12">
+              <div className="flex-1">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="material-symbols-outlined text-primary text-4xl">person_search</span>
+                  <h3 className="text-white text-3xl font-bold">Expert Driver-Trackers</h3>
+                </div>
+                <p className="text-gray-300 text-base leading-relaxed mb-6">
+                  The heart of every great safari is an expert tracker. Our seasoned driver-trackers bring 15+ years of experience, intimate knowledge of animal behavior, and an uncanny ability to read the jungle's subtle signs—a paw print in the mud, a fresh scratch mark on a tree, or the alarm call of a deer.
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                    <p className="text-gray-300 text-sm">Licensed by the Department of Wildlife Conservation</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                    <p className="text-gray-300 text-sm">Deep understanding of leopard territories and movement patterns</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                    <p className="text-gray-300 text-sm">Passionate storytellers who bring the jungle to life</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                    <p className="text-gray-300 text-sm">Committed to ethical wildlife viewing and conservation</p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex-shrink-0">
+                <div 
+                  className="w-80 h-96 rounded-xl bg-cover bg-center shadow-2xl"
+                  data-alt="Experienced safari guide pointing at wildlife"
+                  style={{
+                    backgroundImage: `url("https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&q=80")`
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section className="py-16 bg-[#f4f2eb] dark:bg-[#1a160b]">
         <div className="layout-container flex justify-center">
-          <div className="layout-content-container flex flex-col max-w-[960px] w-full px-4">
+          <div className="layout-content-container flex flex-col max-w-[1200px] w-full px-4">
             <h2 className="text-[#111418] dark:text-white text-3xl font-bold leading-tight text-center mb-10">
               Traveler Stories
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Testimonial 1 */}
-              <div className="p-6 rounded-xl bg-white dark:bg-[#231e10] border border-gray-200 dark:border-[#493f22] shadow-sm">
+              <div className="p-6 rounded-xl bg-white dark:bg-[#231e10] border border-gray-200 dark:border-[#493f22] shadow-sm hover:shadow-lg transition-shadow">
                 <div className="flex gap-1 text-primary mb-3">
                   {[...Array(5)].map((_, i) => (
                     <span key={i} className="material-symbols-outlined text-lg fill-current">star</span>
@@ -375,7 +692,7 @@ export default function Home() {
               </div>
 
               {/* Testimonial 2 */}
-              <div className="p-6 rounded-xl bg-white dark:bg-[#231e10] border border-gray-200 dark:border-[#493f22] shadow-sm">
+              <div className="p-6 rounded-xl bg-white dark:bg-[#231e10] border border-gray-200 dark:border-[#493f22] shadow-sm hover:shadow-lg transition-shadow">
                 <div className="flex gap-1 text-primary mb-3">
                   {[...Array(5)].map((_, i) => (
                     <span key={i} className="material-symbols-outlined text-lg fill-current">star</span>
@@ -395,6 +712,106 @@ export default function Home() {
                   <div>
                     <p className="text-sm font-bold text-[#111418] dark:text-white">Mark D.</p>
                     <p className="text-xs text-gray-500">Australia</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Testimonial 3 */}
+              <div className="p-6 rounded-xl bg-white dark:bg-[#231e10] border border-gray-200 dark:border-[#493f22] shadow-sm hover:shadow-lg transition-shadow">
+                <div className="flex gap-1 text-primary mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <span key={i} className="material-symbols-outlined text-lg fill-current">star</span>
+                  ))}
+                </div>
+                <p className="text-[#111418] dark:text-gray-200 italic mb-4">
+                  "Our tracker spotted a sloth bear with cubs—an incredibly rare sight! The full-day safari was worth every penny. Professional service from start to finish."
+                </p>
+                <div className="flex items-center gap-3">
+                  <div 
+                    className="w-10 h-10 rounded-full bg-gray-300 bg-cover bg-center"
+                    data-alt="Portrait of happy traveler Rajesh"
+                    style={{
+                      backgroundImage: `url("https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80")`
+                    }}
+                  />
+                  <div>
+                    <p className="text-sm font-bold text-[#111418] dark:text-white">Rajesh Kumar</p>
+                    <p className="text-xs text-gray-500">India</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Testimonial 4 */}
+              <div className="p-6 rounded-xl bg-white dark:bg-[#231e10] border border-gray-200 dark:border-[#493f22] shadow-sm hover:shadow-lg transition-shadow">
+                <div className="flex gap-1 text-primary mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <span key={i} className="material-symbols-outlined text-lg fill-current">star</span>
+                  ))}
+                </div>
+                <p className="text-[#111418] dark:text-gray-200 italic mb-4">
+                  "As a wildlife photographer, this was paradise. The morning light, the leopard poses, the bird diversity—everything exceeded expectations. Coming back next year!"
+                </p>
+                <div className="flex items-center gap-3">
+                  <div 
+                    className="w-10 h-10 rounded-full bg-gray-300 bg-cover bg-center"
+                    data-alt="Portrait of happy traveler Emma"
+                    style={{
+                      backgroundImage: `url("https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80")`
+                    }}
+                  />
+                  <div>
+                    <p className="text-sm font-bold text-[#111418] dark:text-white">Emma Thompson</p>
+                    <p className="text-xs text-gray-500">Canada</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Testimonial 5 */}
+              <div className="p-6 rounded-xl bg-white dark:bg-[#231e10] border border-gray-200 dark:border-[#493f22] shadow-sm hover:shadow-lg transition-shadow">
+                <div className="flex gap-1 text-primary mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <span key={i} className="material-symbols-outlined text-lg fill-current">star</span>
+                  ))}
+                </div>
+                <p className="text-[#111418] dark:text-gray-200 italic mb-4">
+                  "Fantastic family experience! Our kids were thrilled to see elephants bathing and peacocks dancing. The guide made it educational and fun for all ages."
+                </p>
+                <div className="flex items-center gap-3">
+                  <div 
+                    className="w-10 h-10 rounded-full bg-gray-300 bg-cover bg-center"
+                    data-alt="Portrait of happy traveler David"
+                    style={{
+                      backgroundImage: `url("https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80")`
+                    }}
+                  />
+                  <div>
+                    <p className="text-sm font-bold text-[#111418] dark:text-white">David Miller</p>
+                    <p className="text-xs text-gray-500">USA</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Testimonial 6 */}
+              <div className="p-6 rounded-xl bg-white dark:bg-[#231e10] border border-gray-200 dark:border-[#493f22] shadow-sm hover:shadow-lg transition-shadow">
+                <div className="flex gap-1 text-primary mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <span key={i} className="material-symbols-outlined text-lg fill-current">star</span>
+                  ))}
+                </div>
+                <p className="text-[#111418] dark:text-gray-200 italic mb-4">
+                  "Best safari I've done in Asia. The afternoon drive delivered stunning sunset views with a leopard silhouette. Booking process was smooth and communication excellent."
+                </p>
+                <div className="flex items-center gap-3">
+                  <div 
+                    className="w-10 h-10 rounded-full bg-gray-300 bg-cover bg-center"
+                    data-alt="Portrait of happy traveler Sophie"
+                    style={{
+                      backgroundImage: `url("https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80")`
+                    }}
+                  />
+                  <div>
+                    <p className="text-sm font-bold text-[#111418] dark:text-white">Sophie Laurent</p>
+                    <p className="text-xs text-gray-500">France</p>
                   </div>
                 </div>
               </div>
