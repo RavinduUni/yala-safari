@@ -58,7 +58,7 @@ export default function Home() {
                 className="w-full h-56 bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500"
                 data-alt="Close up of a Sri Lankan leopard walking through tall grass"
                 style={{
-                  backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuAoJOWPQdJwbzxiUuyJ-K8bCEXXLNg2WTiAiWA1O_QdltYNQtI6jBAk6uImxyrWCj_QsePThhRsTwdaIZVJeUaR-IYH2TbEvA4VdkxxagZXzhE0N1e6Ou6rx1C2kmnmvSUO-zF0IPw_KzFC1ZnV4Pz8f2EYsAPe4uhoAYGWRXo6ejW0X3-QBiFa5o54Y2ihR5lLfmdeV7FO0GTACJxuwN-XWA12khY2yuYSV6wPx0nGfFhGEshtPJXd34seg-2kBwGza4IsOwab4-rN")`
+                  backgroundImage: `url("/images/wildlife/leopard1.jpg")`
                 }}
               />
               <div className="p-5">
@@ -200,10 +200,10 @@ export default function Home() {
                     }}
                   />
                   <div 
-                    className="rounded-xl bg-center bg-cover h-40 w-full"
+                    className="rounded-xl bg-cover h-40 w-full"
                     data-alt="Bear climbing a tree in Yala"
                     style={{
-                      backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuAVvSN1qqEw5ZKlJq1Xc38VmnJ4uI1bAoVLMkHclzOn91gYeYHZ6xTCvO1-IgYI9cFu0Z7ITjw1pciGB5n70Ne--aMJNL7rDrxk-tSrGvlqHka58iQW5oEw_6luzlK9JzFB3f7qerHuTXA2GRg5t9XYhPtxYVowllaMkrdz4KYPvLzJ3Mbzk2p4DAtlHM42aCYoeI2xWIuMWgIXauB4cjsy-Ip7KvwGvCsGYqYQLWJ2fK5KvmmJSEaqESD-b8whgPTroBuTc5-3xY4F")`
+                      backgroundImage: `url("/images/wildlife/slothBear.jpg")`
                     }}
                   />
                 </div>
@@ -231,7 +231,7 @@ export default function Home() {
                 className="relative h-56 bg-cover bg-center"
                 data-alt="Morning sunrise safari in Yala"
                 style={{
-                  backgroundImage: `url("https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80")`
+                  backgroundImage: `url("images/safari/standardmorningsafari.jpg")`
                 }}
               >
                 <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-3 py-1 rounded-full border border-white/10">
@@ -281,7 +281,7 @@ export default function Home() {
                 className="relative h-56 bg-cover bg-center"
                 data-alt="Afternoon sunset safari in Yala"
                 style={{
-                  backgroundImage: `url("https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&q=80")`
+                  backgroundImage: `url("images/safari/standardafternoonsafari.jpg")`
                 }}
               >
                 <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-3 py-1 rounded-full border border-white/10">
@@ -331,7 +331,7 @@ export default function Home() {
                 className="relative h-56 bg-cover bg-center"
                 data-alt="Full day safari experience in Yala"
                 style={{
-                  backgroundImage: `url("https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&q=80")`
+                  backgroundImage: `url("images/safari/ultimatefullday.jpg")`
                 }}
               >
                 <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-3 py-1 rounded-full border border-white/10">
@@ -456,7 +456,7 @@ export default function Home() {
                   className="rounded-2xl overflow-hidden shadow-2xl h-[500px] bg-cover bg-center transform hover:scale-105 transition-transform duration-500"
                   data-alt="Guide showing wildlife tracks to tourists in Yala"
                   style={{
-                    backgroundImage: `url("https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80")`
+                    backgroundImage: `url("/images/landscapes/rock.jpg")`
                   }}
                 >
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
@@ -503,7 +503,7 @@ export default function Home() {
                 className="h-64 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
                 data-alt="Golden sunrise over Yala with silhouette of animals"
                 style={{
-                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80")`
+                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("images/safari/familysafari.jpg")`
                 }}
               >
                 <div className="absolute top-4 left-4">
@@ -532,7 +532,7 @@ export default function Home() {
                 className="h-64 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
                 data-alt="Safari jeep at sunset with dramatic orange sky"
                 style={{
-                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&q=80")`
+                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("images/safari/sunsetPhotography.jpg")`
                 }}
               >
                 <div className="absolute top-4 left-4">
@@ -561,7 +561,7 @@ export default function Home() {
                 className="h-64 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
                 data-alt="Wildlife tracker observing animals with binoculars"
                 style={{
-                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&q=80")`
+                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("images/safari/leopardtracking.jpg")`
                 }}
               >
                 <div className="absolute top-4 left-4">
@@ -590,7 +590,7 @@ export default function Home() {
                 className="h-64 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
                 data-alt="Leopard resting on a rock at sunset"
                 style={{
-                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&q=80")`
+                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("images/safari/yalapicnic.jpg")`
                 }}
               >
                 <div className="absolute top-4 left-4">
@@ -649,7 +649,7 @@ export default function Home() {
                   className="w-80 h-96 rounded-xl bg-cover bg-center shadow-2xl"
                   data-alt="Experienced safari guide pointing at wildlife"
                   style={{
-                    backgroundImage: `url("https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&q=80")`
+                    backgroundImage: `url("/images/wildlife/roadelephants.jpg")`
                   }}
                 />
               </div>

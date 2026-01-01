@@ -68,8 +68,8 @@ export const safariPackages: SafariPackage[] = [
     shortDescription: "Experience the magic of Yala at dawn with our classic morning safari. Perfect for first-time visitors seeking authentic wildlife encounters.",
     duration: "4-5 Hours",
     startingPrice: 85,
-    image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80",
-    heroImage: "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600&q=80",
+    image: "/images/wildlife/leopard1.jpg",
+    heroImage: "/images/wildlife/leopard1.jpg",
     
     overview: `Embark on an unforgettable journey through Yala National Park as the first rays of sunlight pierce through the jungle canopy. Our Standard Morning Safari is designed for wildlife enthusiasts who want to experience the park during its most active hours.
 
@@ -425,8 +425,8 @@ This package includes everything from the standard safari plus: luxury vehicle, 
     shortDescription: "Specialized safari designed for serious photographers with optimal positioning, extended stops, and expert guidance on wildlife photography techniques.",
     duration: "5-6 Hours",
     startingPrice: 125,
-    image: "https://images.unsplash.com/photo-1484406566174-9da000fda645?w=800&q=80",
-    heroImage: "https://images.unsplash.com/photo-1484406566174-9da000fda645?w=1600&q=80",
+    image: "/images/safari/standardmorningsafari.jpg",
+    heroImage: "/images/safari/standardmorningsafari.jpg",
     
     overview: `Designed specifically for photography enthusiasts, this specialized morning safari prioritizes capturing exceptional wildlife images over simply accumulating sightings. Whether you're a seasoned pro or an ambitious amateur, this experience gives you the time, positioning, and expert support needed to create portfolio-quality photographs.
 
@@ -807,8 +807,8 @@ Beyond just identification, this safari educates about bird ecology, behavior, c
     shortDescription: "Experience Yala's golden hour magic as wildlife emerges from the midday heat. Perfect for sunset photography and observing active predators.",
     duration: "3.5-4 Hours",
     startingPrice: 80,
-    image: "https://images.unsplash.com/photo-1535338454770-6f7e8f8b0b1f?w=800&q=80",
-    heroImage: "https://images.unsplash.com/photo-1535338454770-6f7e8f8b0b1f?w=1600&q=80",
+    image: "images/safari/standardafternoonsafari.jpg",
+    heroImage: "images/safari/standardafternoonsafari.jpg",
     
     overview: `The afternoon safari offers a completely different perspective on Yala National Park compared to morning expeditions. As the intense midday heat begins to subside around 2:30 PM, wildlife emerges from shade and rest to resume their daily activities, creating prime viewing opportunities during the magical golden hour.
 
@@ -984,8 +984,8 @@ The safari includes all park entrance fees, expert tracker and driver services, 
     shortDescription: "Premium afternoon safari designed for photographers seeking perfect golden hour light, silhouettes, and dramatic sunset compositions with wildlife.",
     duration: "4-5 Hours",
     startingPrice: 120,
-    image: "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&q=80",
-    heroImage: "https://images.unsplash.com/photo-1549366021-9f761d450615?w=1600&q=80",
+    image: "images/safari/sunsetPhotography.jpg",
+    heroImage: "images/safari/sunsetPhotography.jpg",
     
     overview: `For photographers who understand that light is everything, the Sunset Photography Specialist Safari represents the pinnacle of afternoon wildlife photography experiences. This specialized safari is meticulously planned around the golden hour - that magical period when warm, directional light transforms ordinary scenes into extraordinary photographs.
 
@@ -1171,8 +1171,8 @@ The climax of every safari is sunset positioning. Your tracker selects viewpoint
     shortDescription: "Specialized safari concentrating on Yala's magnificent elephant herds, their social behaviors, bathing rituals, and family dynamics during afternoon hours.",
     duration: "4-5 Hours",
     startingPrice: 95,
-    image: "https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=800&q=80",
-    heroImage: "https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=1600&q=80",
+    image: "images/wildlife/elephants.jpg",
+    heroImage: "images/wildlife/elephants.jpg",
     
     overview: `Yala National Park is home to one of Sri Lanka's most significant elephant populations, and afternoon hours provide the absolute best opportunities to observe these magnificent creatures in their natural element. The Elephant-Focused Afternoon Safari is specifically designed for guests who want to understand and appreciate the complex social lives of Asian elephants.
 
@@ -1539,8 +1539,8 @@ Beyond the champagne moment, this safari includes thoughtful touches: comfortabl
     shortDescription: "Extended safari experience combining morning wildlife activity with midday opportunities. Perfect for serious wildlife enthusiasts seeking more time in the park without full-day commitment.",
     duration: "7 Hours",
     startingPrice: 135,
-    image: "https://images.unsplash.com/photo-1547970810-dc1eac37d174?w=800&q=80",
-    heroImage: "https://images.unsplash.com/photo-1547970810-dc1eac37d174?w=1600&q=80",
+    image: "images/safari/7hourhalfday.jpg",
+    heroImage: " images/safari/7hourhalfday.jpg",
     
     overview: `The 7-Hour Half-Day Safari represents the optimal balance between comprehensive wildlife coverage and practical time management. This extended experience captures the best of both worlds - the intense activity of early morning combined with the unique opportunities of midday when most tourists have departed, giving you semi-exclusive access to the park.
 
@@ -1753,8 +1753,8 @@ This package includes all park fees, expert tracker and driver services, compreh
     shortDescription: "Specialized 7-hour safari dedicated to finding and observing Yala's magnificent leopards. Extended time maximizes chances of multiple sightings and rare behaviors.",
     duration: "7 Hours",
     startingPrice: 165,
-    image: "https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?w=800&q=80",
-    heroImage: "https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?w=1600&q=80",
+    image: "images/safari/leopardtracking.jpg",
+    heroImage: "images/safari/leopardtracking.jpg",
     
     overview: `Yala National Park boasts the highest density of leopards anywhere in the world, yet these elusive apex predators remain challenging to observe. The Intensive Leopard Tracking Safari is specifically designed for guests passionate about seeing, understanding, and photographing these magnificent big cats, and the extended 7-hour timeframe dramatically increases your success probability.
 
@@ -1965,8 +1965,8 @@ This package includes comprehensive park fees, elite leopard tracking specialist
     shortDescription: "Luxury 7-hour safari featuring gourmet wilderness breakfast or lunch, premium wildlife viewing, and exclusive picnic setup at scenic locations within the park.",
     duration: "7 Hours",
     startingPrice: 195,
-    image: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&q=80",
-    heroImage: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1600&q=80",
+    image: "images/safari/yalapicnic.jpg",
+    heroImage: "images/safari/yalapicnic.jpg",
     
     overview: `Transform your safari into a luxurious wilderness adventure with our exclusive Wilderness Picnic Safari Experience. This premium 7-hour journey combines exceptional wildlife viewing with a gourmet meal served in one of Yala's most spectacular natural settings, creating memories that extend far beyond typical safari experiences.
 
@@ -2172,8 +2172,8 @@ This all-inclusive package covers park fees, elite tracker and driver, luxury ve
     shortDescription: "Interactive 7-hour safari designed for families with children, featuring wildlife education activities, junior ranger program, and family-friendly pacing.",
     duration: "7 Hours",
     startingPrice: 140,
-    image: "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=800&q=80",
-    heroImage: "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=1600&q=80",
+    image: "images/safari/familysafari.jpg",
+    heroImage: "images/safari/familysafari.jpg",
     
     overview: `Introducing children to wildlife and nature creates memories and values that last a lifetime. The Family Adventure Safari is thoughtfully designed to engage, educate, and excite young explorers while providing parents with a stress-free, enriching experience in Yala National Park. This isn't just a safari adapted for kids - it's a comprehensive family adventure program that makes wildlife education fun and accessible.
 
@@ -2380,8 +2380,8 @@ By the end of 7 hours, children emerge as junior wildlife experts, excited about
     shortDescription: "Complete 12-hour immersive safari experience from dawn to dusk. Includes breakfast, lunch, and comprehensive coverage of all Yala zones for maximum wildlife encounters.",
     duration: "12 Hours",
     startingPrice: 165,
-    image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80",
-    heroImage: "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600&q=80",
+    image: "images/safari/ultimatefullday.jpg",
+    heroImage: "images/safari/ultimatefullday.jpg",
     
     overview: `The Ultimate Full-Day Wildlife Safari represents the most comprehensive way to experience Yala National Park. Spanning a full 12 hours from pre-dawn through sunset, this immersive journey allows you to witness the complete daily cycle of wilderness life, observe wildlife during all activity periods, and explore every accessible zone within this incredible ecosystem.
 
@@ -2604,8 +2604,8 @@ This all-inclusive package provides everything needed for a full day in the wild
     shortDescription: "Specialized full-day safari dedicated to encountering Yala's 'Big Three' - leopards, elephants, and sloth bears. Maximum success rate with expert tracking.",
     duration: "12 Hours",
     startingPrice: 185,
-    image: "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&q=80",
-    heroImage: "https://images.unsplash.com/photo-1549366021-9f761d450615?w=1600&q=80",
+    image: "images/safari/slothBearsafari.webp",
+    heroImage: "images/safari/slothBearsafari.webp",
     
     overview: `Yala National Park is one of the few places on Earth where you can realistically encounter three major wildlife species in a single day - the Sri Lankan leopard, Asian elephant, and sloth bear. The Big Three Safari Expedition is meticulously designed to maximize your probability of this extraordinary triple achievement while providing deep education about each species.
 
@@ -3037,8 +3037,8 @@ The all-inclusive package covers all park fees, elite senior tracker with luxury
     shortDescription: "Educational 12-hour safari combining wildlife viewing with conservation science. Learn tracking techniques, data collection, and participate in citizen science initiatives.",
     duration: "12 Hours",
     startingPrice: 175,
-    image: "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&q=80",
-    heroImage: "https://images.unsplash.com/photo-1549366021-9f761d450615?w=1600&q=80",
+    image: "images/safari/researchsafari.jpg",
+    heroImage: "images/safari/researchsafari.jpg",
     
     overview: `For wildlife enthusiasts who want to go beyond simple observation and understand the science behind conservation, the Wildlife Research & Conservation Safari offers an immersive educational experience that combines thrilling wildlife encounters with hands-on participation in research methodologies and conservation efforts. This is safari as education, adventure as learning, and tourism as contribution.
 
