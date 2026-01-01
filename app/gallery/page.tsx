@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function Gallery() {
   const images = [
     {
-      url: "https://lh3.googleusercontent.com/aida-public/AB6AXuBlabigrzdVuTH9cKcEuelcq7QjC8yEqhxaCQLxb5Ery8iKeWfL2msbLbEs84bnePBDQ4FA52TvDlbLxCiYuG9oAWnIVfg91AoZ2dfz3Hk5zUAJXxI-1Odd0HqiQqfrvOkgEKuPvR_Toc6nZ6a_RmM64X6hyWL2hTC7-W9PQqTwprcVhW_PEn5CRzReMTqFPmaJ7o4OrARYnmdzEBhAg6lHrrGeetlXpKTkj8C6QQMSv0O9eiwRWZDAynC68TcsRxP04OcpnBQxe-a9",
+      url: "images/wildlife/leopard2.jpg",
       title: "The Alpha Male",
       category: "Leopard",
       aspect: "aspect-[3/4]"
@@ -17,28 +17,34 @@ export default function Gallery() {
       aspect: "aspect-video"
     },
     {
-      url: "https://lh3.googleusercontent.com/aida-public/AB6AXuB8H-yRxUZQjy6hnT_gcB-yA3fU9vbxG3Pjiy45PjSrihTEeDE9_IPqfpz_wQOPbmbGmSEgLt3HJBlp9o_JZJa_ZMdu2nQQ8Hx2FsrxWBs30MGZqUQpqhHgTZuflymQ6v3Ik56ZNFj-wIGtM97okZpkHr8VgQBRZQb2h1gtvDNZ93Bn6Pqws8kGvQIHirjWPXMr0vQTO-rWliMuyxLCiBscorjMfqu1NxE8lqEmnXa4Xb0dlWxXJE_TBnlKp7cQ-l3VgLs_7BKEUSKS",
+      url: "images/wildlife/peacock (1).jpg",
       title: "Royal Dance",
-      category: "Bird",
+      category: "Peacock",
       aspect: "aspect-square"
     },
     {
-      url: "https://lh3.googleusercontent.com/aida-public/AB6AXuDkj1MQFg4My08lUd4uY3bWwUbKYFjZdzvtLmKN557wFhfWvsBcrgJqCxl-nwMiTVbMSYuriYIRMXmil4bfSaQyGcxGfv7ehcuwWDjQ79PxL7RM6T9HA21-m_UD7Mo9quJDxzQmiJ6wxJzEK5yJlWSSg4G5-9UhSLzWvscAF09ET3yrM5GJxKTOrPYwSopq-evIMT0sYXU39XV-GSa6yL6u5EMQQHDlJFDMfYWHD1i55EGiFSJAu2LQvqgTCSfIDVEnVDEOennXJK6d",
+      url: "images/wildlife/slothBear.jpg",
       title: "Morning Forage",
       category: "Sloth Bear",
-      aspect: "aspect-[3/5]"
+      aspect: "aspect-[4/5]"
     },
     {
-      url: "https://lh3.googleusercontent.com/aida-public/AB6AXuChnFtguX_C5iUVChcQtP57G0y-ayJbzknlHLN1QOcVy2yeOPwZU_BNkptZE69HvHy8U_Get5gbY7Tjkk74eMY-PCHireZmRdYA2I0tPvs6XLbU0F9uUMBQ4PB5FIv3LYOWbFfFuwBWTisJ4rVIQIFpiDgHg6t5RBWiVXYtujoR0jlQxemgv_XflwrEwicT8JRFU6LEIwXerenLrhUSeFm2waZKYuylFR12LOzSeBHxhZu4vHLjVfvBgQ7u0V0TK7xdEIEexRQphbTe",
+      url: "images/landscapes/patanagala.jpg",
       title: "Patanangala Rock",
       category: "Landscape",
       aspect: "aspect-[16/10]"
     },
     {
-      url: "https://lh3.googleusercontent.com/aida-public/AB6AXuDowLsJyt1B08bj4vaQcNWpd7Z7pLiXSf1UIepuIyRJiDpN5Z_uDHsap7KDoJy8FaawRklXNrJ0p4QhpnkJJNISCiB1OgaYJD-3yaAaJRHd8zp3GRohrc-U-p0EGJjVPRhWsuLD12FUHWhrr4LgFesyNNWgYssBHkv-UKplPgvudw5wje2kmwfYOUdFhqGTOIFnuuD65vXJMt86J9CC4CU66FFExXV4ZjpShRUrrj9jgMuCGcxhM0ZGERdg1mXNJrXr3hnkPc-4j8YL",
+      url: "images/wildlife/buffalo.jpg",
       title: "River Guardians",
       category: "Buffalo",
       aspect: "aspect-square"
+    },
+    {
+      url: "images/wildlife/crocodile.jpg",
+      title: "Silent Predator",
+      category: "Crocodile",
+      aspect: "aspect-[4/3]"
     }
   ]
 
