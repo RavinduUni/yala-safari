@@ -47,6 +47,12 @@ export default function Header() {
               About Us
             </Link>
             <Link 
+              href="/blog" 
+              className="text-[#111418] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+            >
+              Blog
+            </Link>
+            <Link 
               href="/contact" 
               className="text-[#111418] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
             >
@@ -83,6 +89,9 @@ export default function Header() {
             </Link>
             <Link href="/about" className="text-white text-sm font-medium hover:text-primary transition-colors py-2">
               About Us
+            </Link>
+            <Link href="/blog" className="text-white text-sm font-medium hover:text-primary transition-colors py-2">
+              Blog
             </Link>
             <Link href="/contact" className="text-white text-sm font-medium hover:text-primary transition-colors py-2">
               Contact

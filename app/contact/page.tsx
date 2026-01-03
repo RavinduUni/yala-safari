@@ -92,6 +92,54 @@ export default function Contact() {
                       />
                     </label>
                   </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <label className="flex flex-col flex-1">
+                      <p className="text-white text-sm font-medium leading-normal pb-2">Phone Number</p>
+                      <input 
+                        className="form-input flex w-full rounded-xl text-white focus:outline-0 focus:ring-1 focus:ring-primary border border-[#685a31] bg-[#342d18] focus:border-primary h-14 placeholder:text-[#cbbc90] p-[15px] text-base font-normal" 
+                        placeholder="+94 77 123 4567" 
+                        type="tel"
+                      />
+                    </label>
+
+                    <label className="flex flex-col flex-1">
+                      <p className="text-white text-sm font-medium leading-normal pb-2">Safari Type</p>
+                      <select 
+                        className="form-select flex w-full rounded-xl text-white focus:outline-0 focus:ring-1 focus:ring-primary border border-[#685a31] bg-[#342d18] focus:border-primary h-14 placeholder:text-[#cbbc90] p-[15px] text-base font-normal"
+                      >
+                        <option value="">Select safari type</option>
+                        <option value="private-all-inclusive">Private All-Inclusive</option>
+                        <option value="shared-all-inclusive">Shared All-Inclusive</option>
+                        <option value="private-jeep-only">Private Jeep-Only</option>
+                        <option value="shared-jeep-only">Shared Jeep-Only</option>
+                      </select>
+                    </label>
+                   
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <label className="flex flex-col flex-1">
+                      <p className="text-white text-sm font-medium leading-normal pb-2">Number of Guests</p>
+                      <input 
+                        className="form-input flex w-full rounded-xl text-white focus:outline-0 focus:ring-1 focus:ring-primary border border-[#685a31] bg-[#342d18] focus:border-primary h-14 placeholder:text-[#cbbc90] p-[15px] text-base font-normal" 
+                        placeholder="2" 
+                        type="number"
+                        min="1"
+                        max="20"
+                      />
+                    </label>
+
+                    <label className="flex flex-col flex-1">
+                      <p className="text-white text-sm font-medium leading-normal pb-2">Preferred Date</p>
+                      <input 
+                        className="form-input flex w-full rounded-xl text-white focus:outline-0 focus:ring-1 focus:ring-primary border border-[#685a31] bg-[#342d18] focus:border-primary h-14 placeholder:text-[#cbbc90] p-[15px] text-base font-normal" 
+                        type="date"
+                      />
+                    </label>
+                  </div>
+
                   <label className="flex flex-col flex-1">
                     <p className="text-white text-sm font-medium leading-normal pb-2">Your Enquiry</p>
                     <textarea 

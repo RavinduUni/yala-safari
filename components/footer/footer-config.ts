@@ -68,16 +68,22 @@ export const footerConfig: FooterConfig = {
     { label: "Services", href: "/services" },
     { label: "Pricing", href: "/pricing" },
     { label: "Gallery", href: "/gallery" },
+    { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/contact" }
   ],
   services: [
-    { label: "Private All-Inclusive Safaris", href: "/services?category=Private All-Inclusive" },
-    { label: "Shared All-Inclusive Safaris", href: "/services?category=Shared All-Inclusive" },
-    { label: "Private Jeep-Only Tours", href: "/services?category=Private Jeep-Only" },
-    { label: "Shared Jeep-Only Tours", href: "/services?category=Shared Jeep-Only" },
-    { label: "Morning Safari Expeditions", href: "/services#morning" },
-    { label: "Afternoon Wildlife Tours", href: "/services#afternoon" },
-    { label: "Full-Day Adventures", href: "/services#full-day" }
+    // Private All-Inclusive Safaris
+    { label: "Standard Morning Safari", href: "/services/standard-morning-safari" },
+    { label: "Standard Afternoon Safari", href: "/services/standard-afternoon-safari" },
+    // Shared All-Inclusive Safaris
+    { label: "Luxury Morning Safari", href: "/services/luxury-morning-safari" },
+    { label: "Sunset Photography Safari", href: "/services/sunset-photography-safari" },
+    // Private Jeep-Only Tours
+    { label: "Photography Morning Safari", href: "/services/photography-morning-safari" },
+    { label: "Elephant Watching Afternoon Safari", href: "/services/elephant-watching-afternoon-safari" },
+    // Shared Jeep-Only Tours
+    { label: "Birdwatching Morning Safari", href: "/services/birdwatching-morning-safari" },
+    { label: "Romantic Couples Afternoon Safari", href: "/services/romantic-couples-afternoon-safari" },
   ],
   contact: {
     phone: "+94 77 123 4567",
