@@ -94,12 +94,12 @@ export default function Services() {
                     }`}
                   >
                     <span className="material-symbols-outlined text-[18px]">
-                      {category.includes("Morning") ? "wb_sunny" : 
-                       category.includes("Afternoon") ? "wb_twilight" : 
-                       category.includes("7-Hour") ? "schedule" : "calendar_month"}
+                      {category === "Private All-Inclusive" ? "star" : 
+                       category === "Shared All-Inclusive" ? "groups" : 
+                       category === "Private Jeep-Only" ? "directions_car" : "group"}
                     </span>
                     <p className="text-sm font-bold leading-normal">
-                      {category.replace("Private All-Inclusive ", "")}
+                      {category}
                     </p>
                   </button>
                 ))}

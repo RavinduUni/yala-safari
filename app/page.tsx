@@ -6,10 +6,10 @@ export default function Home() {
   return (
     <>
       <Header />
-      
+
       {/* Hero Section */}
       <section className="relative flex min-h-screen flex-col justify-center items-center overflow-hidden">
-        <div 
+        <div
           className="absolute inset-0 z-0 h-full w-full bg-cover bg-center bg-no-repeat"
           data-alt="Majestic leopard resting on a tree branch in Yala National Park"
           style={{
@@ -44,7 +44,7 @@ export default function Home() {
       <section className="py-16 px-4 md:px-10 lg:px-40 bg-background-light dark:bg-background-dark">
         <div className="max-w-[1200px] mx-auto">
           <div className="flex flex-col gap-4 mb-10 text-center md:text-left">
-            <h2 className="text-[#111418] dark:text-white text-3xl font-bold leading-tight tracking-[-0.015em]">
+            <h2 className="text-[#111418] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] mt-2">
               Safari Highlights
             </h2>
             <p className="text-[#637588] dark:text-[#cbbc90] text-base font-normal">
@@ -54,7 +54,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Card 1 */}
             <div className="group flex flex-col gap-3 rounded-xl overflow-hidden bg-white dark:bg-[#2c2614] hover:shadow-xl transition-shadow duration-300 border border-[#e6e8eb] dark:border-[#493f22]">
-              <div 
+              <div
                 className="w-full h-56 bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500"
                 data-alt="Close up of a Sri Lankan leopard walking through tall grass"
                 style={{
@@ -78,7 +78,7 @@ export default function Home() {
 
             {/* Card 2 */}
             <div className="group flex flex-col gap-3 rounded-xl overflow-hidden bg-white dark:bg-[#2c2614] hover:shadow-xl transition-shadow duration-300 border border-[#e6e8eb] dark:border-[#493f22]">
-              <div 
+              <div
                 className="w-full h-56 bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500"
                 data-alt="Herd of Asian elephants drinking water at a lake"
                 style={{
@@ -102,7 +102,7 @@ export default function Home() {
 
             {/* Card 3 */}
             <div className="group flex flex-col gap-3 rounded-xl overflow-hidden bg-white dark:bg-[#2c2614] hover:shadow-xl transition-shadow duration-300 border border-[#e6e8eb] dark:border-[#493f22]">
-              <div 
+              <div
                 className="w-full h-56 bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500"
                 data-alt="Colorful peacock displaying feathers in the wild"
                 style={{
@@ -130,12 +130,12 @@ export default function Home() {
       {/* Why Choose Yala Section */}
       <section className="py-16 bg-[#e6e8eb] dark:bg-[#1c180d]">
         <div className="layout-container flex justify-center">
-          <div className="layout-content-container flex flex-col max-w-[960px] w-full px-4 md:px-0">
+          <div className="layout-content-container flex flex-col max-w-[1200px] w-full px-4 md:px-0">
             <div className="flex flex-col md:flex-row gap-10 items-center">
               <div className="flex-1 flex flex-col gap-6">
                 <div className="flex flex-col gap-4">
-                  <h2 className="text-[#111418] dark:text-white text-3xl font-bold leading-tight">
-                    Why Choose Our Safaris?
+                  <h2 className="text-[#111418] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] mt-2">
+                    Why Choose Yala for our Safari Adventure?
                   </h2>
                   <p className="text-[#637588] dark:text-[#cbbc90] text-base leading-relaxed">
                     We don't just drive you through the park; we offer an immersive educational journey. Our
@@ -185,21 +185,21 @@ export default function Home() {
               </div>
               <div className="flex-1 w-full">
                 <div className="grid grid-cols-2 gap-3 w-full">
-                  <div 
+                  <div
                     className="rounded-xl bg-center bg-cover h-64 md:h-80 w-full col-span-2"
                     data-alt="Safari jeep with tourists looking at wildlife"
                     style={{
                       backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuAbQBxS0obXPzjG9R1eN_P1WSWV1h30D-zeJHzuXKzLmwRz6JvHuWq5mgP4OzP_dl8rZyj1XHlU91R3hwoHAip-aIqE9OZOcisPDLJtLIp06AvuT0mtPQLeL9TCPsK5CuNAKTV-f9fMmHHaCgORoR9D0GudxViRXoVDa4nCeFpajH1SJyr-4FeMS9r_7yYO3KBDdxKUx5Iusz4yOQHCOcpism9ZyXxZwSwCbCstM3NbQYUMYARXvBxClXmqA--0_4yuRzBEM6Utw7Yh")`
                     }}
                   />
-                  <div 
+                  <div
                     className="rounded-xl bg-center bg-cover h-40 w-full"
                     data-alt="Close up of a green bee eater bird"
                     style={{
                       backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuDzMkXXuyUZR9HlqDMn_GxqttrYX2h5n19shWBW2j0wbu90fBB37zQ5qJj5z_ZTU_JoFuUk7xJrV9m-h89olDWMocOYO-Q-zIN6ySQ0dWHEDJY7f-xjWD7veGkZl-Hy1AYVF0XZ5hlT7F4L4on96El8p8RJHd5VqhDlW1g7jAc_-vkoC8tfltbOjwHqfUd9h8nL_zFDYXl7sFUbcGRTR5kDSqX9-360Gx435egHCwAwihkHFhrkEi5NUi8U_I2ps2c7y3d4c2FCbcVE")`
                     }}
                   />
-                  <div 
+                  <div
                     className="rounded-xl bg-cover h-40 w-full"
                     data-alt="Bear climbing a tree in Yala"
                     style={{
@@ -227,7 +227,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Package 1 - Standard Morning Safari */}
             <div className="flex flex-col bg-white dark:bg-[#2c2614] rounded-xl overflow-hidden border border-[#e6e8eb] dark:border-[#493f22] hover:shadow-xl transition-shadow duration-300 group">
-              <div 
+              <div
                 className="relative h-56 bg-cover bg-center"
                 data-alt="Morning sunrise safari in Yala"
                 style={{
@@ -277,7 +277,7 @@ export default function Home() {
 
             {/* Package 2 - Standard Afternoon Safari */}
             <div className="flex flex-col bg-white dark:bg-[#2c2614] rounded-xl overflow-hidden border border-[#e6e8eb] dark:border-[#493f22] hover:shadow-xl transition-shadow duration-300 group">
-              <div 
+              <div
                 className="relative h-56 bg-cover bg-center"
                 data-alt="Afternoon sunset safari in Yala"
                 style={{
@@ -327,7 +327,7 @@ export default function Home() {
 
             {/* Package 3 - Ultimate Full-Day Safari */}
             <div className="flex flex-col bg-white dark:bg-[#2c2614] rounded-xl overflow-hidden border border-[#e6e8eb] dark:border-[#493f22] hover:shadow-xl transition-shadow duration-300 group">
-              <div 
+              <div
                 className="relative h-56 bg-cover bg-center"
                 data-alt="Full day safari experience in Yala"
                 style={{
@@ -452,7 +452,7 @@ export default function Home() {
             </div>
             <div className="flex-1 w-full">
               <div className="relative">
-                <div 
+                <div
                   className="rounded-2xl overflow-hidden shadow-2xl h-[500px] bg-cover bg-center transform hover:scale-105 transition-transform duration-500"
                   data-alt="Guide showing wildlife tracks to tourists in Yala"
                   style={{
@@ -499,7 +499,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {/* Morning Safari */}
             <div className="group relative overflow-hidden rounded-2xl bg-white dark:bg-[#2c2614] border border-[#e6e8eb] dark:border-[#493f22] hover:shadow-2xl transition-all duration-300">
-              <div 
+              <div
                 className="h-64 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
                 data-alt="Golden sunrise over Yala with silhouette of animals"
                 style={{
@@ -528,7 +528,7 @@ export default function Home() {
 
             {/* Afternoon Safari */}
             <div className="group relative overflow-hidden rounded-2xl bg-white dark:bg-[#2c2614] border border-[#e6e8eb] dark:border-[#493f22] hover:shadow-2xl transition-all duration-300">
-              <div 
+              <div
                 className="h-64 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
                 data-alt="Safari jeep at sunset with dramatic orange sky"
                 style={{
@@ -557,7 +557,7 @@ export default function Home() {
 
             {/* Half-Day Safari */}
             <div className="group relative overflow-hidden rounded-2xl bg-white dark:bg-[#2c2614] border border-[#e6e8eb] dark:border-[#493f22] hover:shadow-2xl transition-all duration-300">
-              <div 
+              <div
                 className="h-64 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
                 data-alt="Wildlife tracker observing animals with binoculars"
                 style={{
@@ -586,7 +586,7 @@ export default function Home() {
 
             {/* Full-Day Safari */}
             <div className="group relative overflow-hidden rounded-2xl bg-white dark:bg-[#2c2614] border border-[#e6e8eb] dark:border-[#493f22] hover:shadow-2xl transition-all duration-300">
-              <div 
+              <div
                 className="h-64 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
                 data-alt="Leopard resting on a rock at sunset"
                 style={{
@@ -645,7 +645,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex-shrink-0">
-                <div 
+                <div
                   className="w-80 h-96 rounded-xl bg-cover bg-center shadow-2xl"
                   data-alt="Experienced safari guide pointing at wildlife"
                   style={{
@@ -662,7 +662,7 @@ export default function Home() {
       <section className="py-16 bg-[#f4f2eb] dark:bg-[#1a160b]">
         <div className="layout-container flex justify-center">
           <div className="layout-content-container flex flex-col max-w-[1200px] w-full px-4">
-            <h2 className="text-[#111418] dark:text-white text-3xl font-bold leading-tight text-center mb-10">
+            <h2 className="text-[#111418] dark:text-white text-4xl font-black text-center leading-tight tracking-[-0.033em] mt-2 mb-10">
               Traveler Stories
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -677,7 +677,7 @@ export default function Home() {
                   "Absolutely breathtaking. We saw three leopards in one morning! The guide was incredibly knowledgeable and respected the animals' space."
                 </p>
                 <div className="flex items-center gap-3">
-                  <div 
+                  <div
                     className="w-10 h-10 rounded-full bg-gray-300 bg-cover bg-center"
                     data-alt="Portrait of happy traveler Sarah"
                     style={{
@@ -702,7 +702,7 @@ export default function Home() {
                   "The luxury camping experience was a highlight of our Sri Lanka trip. Falling asleep to the sounds of the jungle was magical. Highly recommend!"
                 </p>
                 <div className="flex items-center gap-3">
-                  <div 
+                  <div
                     className="w-10 h-10 rounded-full bg-gray-300 bg-cover bg-center"
                     data-alt="Portrait of happy traveler Mark"
                     style={{
@@ -727,7 +727,7 @@ export default function Home() {
                   "Our tracker spotted a sloth bear with cubs—an incredibly rare sight! The full-day safari was worth every penny. Professional service from start to finish."
                 </p>
                 <div className="flex items-center gap-3">
-                  <div 
+                  <div
                     className="w-10 h-10 rounded-full bg-gray-300 bg-cover bg-center"
                     data-alt="Portrait of happy traveler Rajesh"
                     style={{
@@ -752,7 +752,7 @@ export default function Home() {
                   "As a wildlife photographer, this was paradise. The morning light, the leopard poses, the bird diversity—everything exceeded expectations. Coming back next year!"
                 </p>
                 <div className="flex items-center gap-3">
-                  <div 
+                  <div
                     className="w-10 h-10 rounded-full bg-gray-300 bg-cover bg-center"
                     data-alt="Portrait of happy traveler Emma"
                     style={{
@@ -777,7 +777,7 @@ export default function Home() {
                   "Fantastic family experience! Our kids were thrilled to see elephants bathing and peacocks dancing. The guide made it educational and fun for all ages."
                 </p>
                 <div className="flex items-center gap-3">
-                  <div 
+                  <div
                     className="w-10 h-10 rounded-full bg-gray-300 bg-cover bg-center"
                     data-alt="Portrait of happy traveler David"
                     style={{
@@ -802,7 +802,7 @@ export default function Home() {
                   "Best safari I've done in Asia. The afternoon drive delivered stunning sunset views with a leopard silhouette. Booking process was smooth and communication excellent."
                 </p>
                 <div className="flex items-center gap-3">
-                  <div 
+                  <div
                     className="w-10 h-10 rounded-full bg-gray-300 bg-cover bg-center"
                     data-alt="Portrait of happy traveler Sophie"
                     style={{

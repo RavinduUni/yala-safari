@@ -51,10 +51,10 @@ export interface SafariPackage {
 }
 
 export const safariCategories = [
-  "Private All-Inclusive Morning Safari",
-  "Private All-Inclusive Afternoon Safari",
-  "Private All-Inclusive 7-Hour Half-Day Safari",
-  "Private All-Inclusive Full-Day Safari"
+  "Private All-Inclusive",
+  "Shared All-Inclusive",
+  "Private Jeep-Only",
+  "Shared Jeep-Only"
 ];
 
 export const safariPackages: SafariPackage[] = [
@@ -63,7 +63,7 @@ export const safariPackages: SafariPackage[] = [
   // ========================================
   {
     slug: "standard-morning-safari",
-    category: "Private All-Inclusive Morning Safari",
+    category: "Private All-Inclusive",
     title: "Standard Morning Safari Experience",
     shortDescription: "Experience the magic of Yala at dawn with our classic morning safari. Perfect for first-time visitors seeking authentic wildlife encounters.",
     duration: "4-5 Hours",
@@ -240,7 +240,7 @@ This package includes park entrance fees, tracker and driver services, bottled w
   // ========================================
   {
     slug: "luxury-morning-safari",
-    category: "Private All-Inclusive Morning Safari",
+    category: "Shared All-Inclusive",
     title: "Luxury Morning Safari with Champagne Breakfast",
     shortDescription: "Elevate your Yala experience with VIP treatment, premium vehicle, professional photography service, and gourmet champagne breakfast in the wilderness.",
     duration: "5-6 Hours",
@@ -420,7 +420,7 @@ This package includes everything from the standard safari plus: luxury vehicle, 
   // ========================================
   {
     slug: "photography-morning-safari",
-    category: "Private All-Inclusive Morning Safari",
+    category: "Private Jeep-Only",
     title: "Photography-Focused Morning Safari",
     shortDescription: "Specialized safari designed for serious photographers with optimal positioning, extended stops, and expert guidance on wildlife photography techniques.",
     duration: "5-6 Hours",
@@ -611,7 +611,7 @@ The package includes detailed pre-safari consultation about your equipment and g
   // ========================================
   {
     slug: "birdwatching-morning-safari",
-    category: "Private All-Inclusive Morning Safari",
+    category: "Shared Jeep-Only",
     title: "Specialized Birdwatching Morning Safari",
     shortDescription: "Expert-guided birding safari focusing on Yala's 215+ bird species, including endemic Sri Lankan species and seasonal migrants. Perfect for ornithology enthusiasts.",
     duration: "5-6 Hours",
@@ -802,7 +802,7 @@ Beyond just identification, this safari educates about bird ecology, behavior, c
   // ========================================
   {
     slug: "standard-afternoon-safari",
-    category: "Private All-Inclusive Afternoon Safari",
+    category: "Private All-Inclusive",
     title: "Standard Afternoon Safari Experience",
     shortDescription: "Experience Yala's golden hour magic as wildlife emerges from the midday heat. Perfect for sunset photography and observing active predators.",
     duration: "3.5-4 Hours",
@@ -979,7 +979,7 @@ The safari includes all park entrance fees, expert tracker and driver services, 
   // ========================================
   {
     slug: "sunset-photography-safari",
-    category: "Private All-Inclusive Afternoon Safari",
+    category: "Shared All-Inclusive",
     title: "Sunset Photography Specialist Safari",
     shortDescription: "Premium afternoon safari designed for photographers seeking perfect golden hour light, silhouettes, and dramatic sunset compositions with wildlife.",
     duration: "4-5 Hours",
@@ -1166,7 +1166,7 @@ The climax of every safari is sunset positioning. Your tracker selects viewpoint
   // ========================================
   {
     slug: "elephant-watching-afternoon-safari",
-    category: "Private All-Inclusive Afternoon Safari",
+    category: "Private Jeep-Only",
     title: "Elephant-Focused Afternoon Safari",
     shortDescription: "Specialized safari concentrating on Yala's magnificent elephant herds, their social behaviors, bathing rituals, and family dynamics during afternoon hours.",
     duration: "4-5 Hours",
@@ -1353,7 +1353,7 @@ The safari includes educational commentary on elephant ecology, conservation sta
   // ========================================
   {
     slug: "romantic-couples-afternoon-safari",
-    category: "Private All-Inclusive Afternoon Safari",
+    category: "Shared Jeep-Only",
     title: "Romantic Couples Sunset Safari",
     shortDescription: "Intimate afternoon safari designed for couples, featuring private vehicle, champagne sunset, gourmet snacks, and unforgettable wildlife encounters.",
     duration: "4-5 Hours",
@@ -1534,7 +1534,7 @@ Beyond the champagne moment, this safari includes thoughtful touches: comfortabl
   // ========================================
   {
     slug: "comprehensive-half-day-safari",
-    category: "Private All-Inclusive 7-Hour Half-Day Safari",
+    category: "Private All-Inclusive",
     title: "Comprehensive 7-Hour Half-Day Safari",
     shortDescription: "Extended safari experience combining morning wildlife activity with midday opportunities. Perfect for serious wildlife enthusiasts seeking more time in the park without full-day commitment.",
     duration: "7 Hours",
@@ -1748,7 +1748,7 @@ This package includes all park fees, expert tracker and driver services, compreh
   // ========================================
   {
     slug: "leopard-tracking-half-day-safari",
-    category: "Private All-Inclusive 7-Hour Half-Day Safari",
+    category: "Shared All-Inclusive",
     title: "Intensive Leopard Tracking Safari",
     shortDescription: "Specialized 7-hour safari dedicated to finding and observing Yala's magnificent leopards. Extended time maximizes chances of multiple sightings and rare behaviors.",
     duration: "7 Hours",
@@ -1960,7 +1960,7 @@ This package includes comprehensive park fees, elite leopard tracking specialist
   // ========================================
   {
     slug: "wilderness-picnic-half-day-safari",
-    category: "Private All-Inclusive 7-Hour Half-Day Safari",
+    category: "Private Jeep-Only",
     title: "Wilderness Picnic Safari Experience",
     shortDescription: "Luxury 7-hour safari featuring gourmet wilderness breakfast or lunch, premium wildlife viewing, and exclusive picnic setup at scenic locations within the park.",
     duration: "7 Hours",
@@ -2167,7 +2167,7 @@ This all-inclusive package covers park fees, elite tracker and driver, luxury ve
   // ========================================
   {
     slug: "family-adventure-half-day-safari",
-    category: "Private All-Inclusive 7-Hour Half-Day Safari",
+    category: "Shared Jeep-Only",
     title: "Family Adventure Safari with Educational Program",
     shortDescription: "Interactive 7-hour safari designed for families with children, featuring wildlife education activities, junior ranger program, and family-friendly pacing.",
     duration: "7 Hours",
@@ -2375,7 +2375,7 @@ By the end of 7 hours, children emerge as junior wildlife experts, excited about
   // ========================================
   {
     slug: "ultimate-full-day-safari",
-    category: "Private All-Inclusive Full-Day Safari",
+    category: "Private All-Inclusive",
     title: "Ultimate Full-Day Wildlife Safari",
     shortDescription: "Complete 12-hour immersive safari experience from dawn to dusk. Includes breakfast, lunch, and comprehensive coverage of all Yala zones for maximum wildlife encounters.",
     duration: "12 Hours",
@@ -2599,7 +2599,7 @@ This all-inclusive package provides everything needed for a full day in the wild
   // ========================================
   {
     slug: "big-three-safari-expedition",
-    category: "Private All-Inclusive Full-Day Safari",
+    category: "Shared All-Inclusive",
     title: "Big Three Safari Expedition",
     shortDescription: "Specialized full-day safari dedicated to encountering Yala's 'Big Three' - leopards, elephants, and sloth bears. Maximum success rate with expert tracking.",
     duration: "12 Hours",
@@ -2816,7 +2816,7 @@ This all-inclusive package includes park fees, Big Three specialist tracker, dri
   // ========================================
   {
     slug: "premium-luxury-full-day-safari",
-    category: "Private All-Inclusive Full-Day Safari",
+    category: "Private Jeep-Only",
     title: "Premium Luxury Full-Day Safari with Private Chef",
     shortDescription: "Ultra-luxury 12-hour safari featuring private chef-prepared gourmet meals, premium vehicle, elite service, and exclusive wilderness dining experiences.",
     duration: "12 Hours",
@@ -3032,7 +3032,7 @@ The all-inclusive package covers all park fees, elite senior tracker with luxury
   // ========================================
   {
     slug: "wildlife-research-safari",
-    category: "Private All-Inclusive Full-Day Safari",
+    category: "Shared Jeep-Only",
     title: "Wildlife Research & Conservation Safari",
     shortDescription: "Educational 12-hour safari combining wildlife viewing with conservation science. Learn tracking techniques, data collection, and participate in citizen science initiatives.",
     duration: "12 Hours",
