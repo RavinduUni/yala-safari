@@ -20,9 +20,13 @@ export default function BookingForm({ packageTitle, pricingTiers }: BookingFormP
 
   // Calculate total price based on group size and selected tier
   useEffect(() => {
-    // Find the appropriate pricing tier based on ADULTS only
+    // IMPORTANT: Pricing tier is based ONLY on number of ADULTS
+    // Children and infants DO NOT affect the adult pricing tier
+    // This ensures adding children only adds child costs, never reduces adult pricing
+    
     let selectedTier = pricingTiers[0] // Default to smallest group
     
+    // Select pricing tier based exclusively on adult count
     if (adults <= 1) {
       selectedTier = pricingTiers.find(t => t.groupSize.includes("1")) || pricingTiers[0]
     } else if (adults === 2) {
@@ -33,16 +37,24 @@ export default function BookingForm({ packageTitle, pricingTiers }: BookingFormP
       selectedTier = pricingTiers.find(t => t.groupSize.includes("4")) || pricingTiers[3]
     } else if (adults === 5) {
       selectedTier = pricingTiers.find(t => t.groupSize.includes("5")) || pricingTiers[4]
-    } else {
+    } else if (adults >= 6) {
       selectedTier = pricingTiers.find(t => t.groupSize.includes("6")) || pricingTiers[pricingTiers.length - 1]
     }
 
-    // Calculate total: adults at tier price, children at child price, infants at infant price
+    // Calculate total price components separately
+    // Adult pricing: based on adult count and their pricing tier
     const adultsTotal = adults * selectedTier.pricePerPerson
+    
+    // Child pricing: fixed rate per child, independent of group size
     const childrenTotal = children * selectedTier.childPrice
+    
+    // Infant pricing: typically free (infantPrice = 0)
     const infantsTotal = infants * selectedTier.infantPrice
     
-    setTotalPrice(adultsTotal + childrenTotal + infantsTotal)
+    // Final total = sum of all components
+    const calculatedTotal = adultsTotal + childrenTotal + infantsTotal
+    
+    setTotalPrice(calculatedTotal)
   }, [adults, children, infants, pricingTiers])
 
   const handleSubmit = (e: React.FormEvent) => {
