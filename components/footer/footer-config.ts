@@ -83,7 +83,6 @@ export const footerConfig: FooterConfig = {
     { label: "Elephant Watching Afternoon Safari", href: "/services/elephant-watching-afternoon-safari" },
     // Shared Jeep-Only Tours
     { label: "Birdwatching Morning Safari", href: "/services/birdwatching-morning-safari" },
-    { label: "Romantic Couples Afternoon Safari", href: "/services/romantic-couples-afternoon-safari" },
   ],
   contact: {
     phone: "+94 77 123 4567",

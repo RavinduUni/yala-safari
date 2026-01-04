@@ -27,7 +27,7 @@ export default function Services() {
                 <div 
                   className="flex min-h-screen flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 items-center justify-center p-8 relative overflow-hidden group"
                   style={{
-                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuChIOWwzdf23cBwHqMdpTMnnhqTLPNJ4Ouj9_77G63UCCmLYYC9tN5S4u9YMKH-Ctoax0aQJpG--ggwQg2NwiaN-Cv9lDvst6QEXwxPY95QzuD1vZKiUilw7CF7GLw9NyTSOJ8vbDDDkVvn0NzqoYIzIjNeQV8MEwwC9oIfHPqloLFWiqBV4uiXOO1wLFoUx7HaoPGT_rDPA-gDdBRWY5sl9kUPmRfi5ZjbCloGtrE6YehzrKwSUaEvImKKFH6rtftbps81RKc1eHTh")`
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("/images/wildlife/servicesImg.png")`
                   }}
                 >
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-700" />

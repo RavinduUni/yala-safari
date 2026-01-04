@@ -55,9 +55,9 @@ export default function Gallery() {
       <main className="flex-grow flex flex-col items-center w-full dark:bg-background-dark dark:text-white">
         {/* Hero Section */}
         <section 
-          className="w-full relative h-[60vh] min-h-[500px] flex items-end justify-start bg-cover bg-center"
+          className="w-full relative h-[80vh] min-h-[500px] flex items-end justify-start bg-cover bg-center"
           style={{
-            backgroundImage: `linear-gradient(rgba(34, 30, 16, 0.2) 0%, rgba(34, 30, 16, 0.9) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAWFNukRw08U8QSkihCz0TChT6gIWPPda5xUCqbMxZebYV4CLXw1wOcL5kyKYHxDwI3RNC3mG1vcvcORxil6w0uZMmaOpVT0UliKLMzNE1eNGHuoxLw-TPGBLLMlR3FoGmriuMdqBNaTEmQi4xY52dBUYGb0V4tdxr89INM0NTBQfjeR_85qE51hjaT3mcoH8FrS-ZI5d5iN4-fClosMO52xup0mYHVykeN12sxjrCx-9KA2QGWpCUEgW_4B2xEA73wKJpOxKSHHj35")`
+            backgroundImage: `linear-gradient(rgba(34, 30, 16, 0.2) 0%, rgba(34, 30, 16, 0.9) 100%), url("/images/wildlife/galleryImg.png")`
           }}
         >
           <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pb-16">

@@ -13,10 +13,15 @@ export default function Home() {
           className="absolute inset-0 z-0 h-full w-full bg-cover bg-center bg-no-repeat"
           data-alt="Majestic leopard resting on a tree branch in Yala National Park"
           style={{
-            backgroundImage: `linear-gradient(rgba(35, 30, 16, 0.3) 0%, rgba(35, 30, 16, 0.7) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDARANJGfeIj3By5vRLWL-jWtvwQ7dD9bXUy9Q6KCyQBUVUKOI2NZ-R_DBGMc2eMRQPU3UjRy5Xxum39h4Z1r9lYwYBk5RVd8QEihL8_uY7wBPmyUPi4UqlzEOuz3QHF6ly8MisIqbGvtICuoHcsqVBSfJzoxxqsqLj3xQ__mTvMdQg9D9xOaAbeXQD-eKgsJH2Gbh8wTU8aGERJzyui9nKMo3p5rxFKhRCBuJRpSpEkMYr5BB-gMuSaxIL3bLozrr9Ud6AjYzbzwKL")`
+            backgroundImage: `linear-gradient(rgba(35, 30, 16, 0.3) 0%, rgba(35, 30, 16, 0.7) 100%), url("/images/wildlife/homePageImg.png")`
           }}
         />
         <div className="relative z-10 layout-content-container flex flex-col max-w-[960px] px-4 text-center">
+          <div className='mb-4'>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 backdrop-blur-sm border border-primary/30 w-fit">
+              <span className="text-primary text-xs font-bold uppercase tracking-wider">Yala Safari Sri Lanka</span>
+            </div>
+          </div>
           <div className="flex flex-col gap-4 animate-fade-in-up">
             <h1 className="text-white text-5xl font-black leading-tight tracking-[-0.033em] md:text-6xl drop-shadow-lg">
               Experience the Wild Heart of Sri Lanka
