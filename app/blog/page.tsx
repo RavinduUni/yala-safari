@@ -12,12 +12,24 @@ export default function Blog() {
       
       <main className="flex-1 flex flex-col dark:bg-background-dark dark:text-white">
         {/* Hero Section */}
-        <section className="relative min-h-[400px] w-full flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#231e10] via-[#2c2614] to-[#3a321d]">
+        <section className="relative min-h-[90vh] w-full flex items-center justify-center overflow-hidden">
+          {/* Background Image */}
+          <div 
+            className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `linear-gradient(to bottom, rgba(35, 30, 16, 0.75) 0%, rgba(35, 30, 16, 0.85) 100%), url("/images/wildlife/elephants.jpg")`
+            }}
+          />
+          
           <div className="relative z-10 container mx-auto px-4 lg:px-10 text-center max-w-4xl py-20">
-            <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-[-0.033em] mb-4">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 backdrop-blur-sm border border-primary/30 mb-6">
+              <span className="material-symbols-outlined text-primary text-sm">article</span>
+              <span className="text-primary text-xs font-bold uppercase tracking-wider">Wildlife Stories & Guides</span>
+            </div>
+            <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-[-0.033em] mb-4 drop-shadow-lg">
               Yala Wildlife Blog
             </h1>
-            <p className="text-white/90 text-base sm:text-lg font-normal leading-relaxed max-w-2xl mx-auto">
+            <p className="text-white/90 text-base sm:text-lg font-normal leading-relaxed max-w-2xl mx-auto drop-shadow-md">
               Expert insights, wildlife guides, and conservation stories from Sri Lanka's premier national park
             </p>
           </div>
@@ -87,29 +99,7 @@ export default function Blog() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-16 px-4 md:px-10 lg:px-40 bg-[#2c2614]">
-          <div className="max-w-[800px] mx-auto text-center">
-            <h2 className="text-white text-3xl md:text-4xl font-black mb-4">
-              Ready to Experience Yala?
-            </h2>
-            <p className="text-[#cbbc90] text-lg mb-8">
-              Transform knowledge into adventure. Book your safari and witness these stories come to life.
-            </p>
-            <div className="flex flex-wrap gap-4 justify-center">
-              <Link href="/book">
-                <button className="flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-primary hover:bg-yellow-500 transition-all transform hover:scale-105 text-[#231e10] text-base font-bold leading-normal tracking-[0.015em] shadow-lg shadow-primary/20">
-                  <span className="truncate">Book Your Safari</span>
-                </button>
-              </Link>
-              <Link href="/services">
-                <button className="flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-transparent border-2 border-primary hover:bg-primary/10 transition-all text-primary text-base font-bold leading-normal tracking-[0.015em]">
-                  <span className="truncate">View Safari Packages</span>
-                </button>
-              </Link>
-            </div>
-          </div>
-        </section>
+        
       </main>
       
       <Footer />

@@ -19,41 +19,42 @@ export default function Header() {
             </h2>
           </Link>
         </div>
-        
+
         <div className="hidden lg:flex flex-1 justify-end gap-8">
           <div className="flex items-center gap-9">
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className="text-[#111418] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
             >
               Home
             </Link>
-            <Link 
-              href="/services" 
+            <Link
+              href="/services"
               className="text-[#111418] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
             >
               Safaris
             </Link>
-            <Link 
-              href="/gallery" 
-              className="text-[#111418] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
-            >
-              Gallery
-            </Link>
-            <Link 
-              href="/about" 
+            <Link
+              href="/about"
               className="text-[#111418] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
             >
               About Us
             </Link>
-            <Link 
-              href="/blog" 
+            <Link
+              href="/gallery"
+              className="text-[#111418] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+            >
+              Gallery
+            </Link>
+
+            <Link
+              href="/blog"
               className="text-[#111418] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
             >
               Blog
             </Link>
-            <Link 
-              href="/contact" 
+            <Link
+              href="/contact"
               className="text-[#111418] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
             >
               Contact
@@ -65,8 +66,8 @@ export default function Header() {
             </button>
           </Link>
         </div>
-        
-        <button 
+
+        <button
           className="lg:hidden text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >

@@ -113,33 +113,7 @@ export default function Gallery() {
           </div>
         </div>
 
-        {/* CTA Section */}
-        <section className="w-full bg-[#1a170d] border-t border-white/5 py-20 px-4">
-          <div className="max-w-4xl mx-auto text-center flex flex-col items-center gap-8">
-            <div className="size-16 rounded-full bg-primary/10 flex items-center justify-center mb-2">
-              <span className="material-symbols-outlined text-primary text-3xl">calendar_month</span>
-            </div>
-            <h2 className="text-3xl md:text-5xl font-black text-white leading-tight">
-              Turn Inspiration Into Reality
-            </h2>
-            <p className="text-lg text-gray-400 max-w-2xl">
-              Don't just look at the photos. Experience the thrill of the wild with our expert-guided safari tours in the heart of Yala.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-              <Link href="/book">
-                <button className="flex items-center justify-center gap-2 h-14 px-8 rounded-xl bg-primary text-background-dark font-bold text-lg hover:bg-white hover:scale-105 transition-all duration-300 shadow-xl shadow-primary/20">
-                  Book Your Safari
-                  <span className="material-symbols-outlined">arrow_forward</span>
-                </button>
-              </Link>
-              <Link href="/pricing">
-                <button className="flex items-center justify-center gap-2 h-14 px-8 rounded-xl bg-transparent border border-white/20 text-white font-bold text-lg hover:bg-white/5 hover:border-white transition-all duration-300">
-                  View Safari Packages
-                </button>
-              </Link>
-            </div>
-          </div>
-        </section>
+        
       </main>
       
       <Footer />

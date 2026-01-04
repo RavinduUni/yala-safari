@@ -178,7 +178,7 @@ export default function About() {
                   <h3 className="text-xl font-bold text-white">Diverse Landscapes</h3>
                 </div>
                 <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                  From dry monsoon forests to pristine beaches, brackish lagoons to open grasslands—Yala's mosaic 
+                  From dry monsoon forests to pristine beaches, brackish lagoons to open grasslands Yala's mosaic 
                   of habitats creates stunning scenery and supports incredible wildlife diversity.
                 </p>
                 <p className="text-primary text-xs font-semibold">Six distinct ecosystem types</p>

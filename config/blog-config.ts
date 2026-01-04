@@ -17,7 +17,7 @@ export const blogs: Blog[] = [
     title: "The Ultimate Guide to Spotting Sri Lankan Leopards in Yala",
     slug: "ultimate-guide-spotting-sri-lankan-leopards",
     excerpt: "Discover the secrets to maximizing your chances of encountering the elusive Sri Lankan leopard. Learn about their behavior, best viewing times, and expert tracking techniques.",
-    image: "/images/wildlife/leopard1.jpg",
+    image: "/images/wildlife/aboutYala.jpg",
     category: "Wildlife Guide",
     publishDate: "2026-01-02",
     content: `
@@ -90,7 +90,7 @@ Book your leopard tracking safari with experienced guides who understand these m
     title: "Morning vs Afternoon Safari: Which Time Offers Better Wildlife Sightings?",
     slug: "morning-vs-afternoon-safari-comparison",
     excerpt: "Confused about whether to book a morning or afternoon safari? We break down the wildlife activity patterns, lighting conditions, and unique advantages of each time slot.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAztlf2QvRYOdMewDypS3yFuO_4G7xiYUiJBcairWoY3lBl7Iu3bHoT9AJu7z90s7CSKVWx9VY9X_kH5--XK-VMyTSMO1XvTTAHvpu0wzcTVW356e8NtdqgzE2ulHR9MWdW702ajfEMwrYcFI5ChMB8NF8FstUG3n4TFark5kpCo-e7KJsF28hof7OBsN48nnFSOiOaM0PakEywgu22J9odn3vDkdrVlIRxRjcGBNBR_9jq6ZNe-4Y-_f8XQrrYTgF4HwS90hIFXTcY",
+    image: "/images/wildlife/blog2.jpg",
     category: "Safari Tips",
     publishDate: "2025-12-28",
     content: `
@@ -216,7 +216,7 @@ Ready to experience Yala at its finest? Book your morning or afternoon safari wi
     title: "Wildlife Photography in Yala: Essential Camera Settings and Techniques",
     slug: "wildlife-photography-camera-settings-yala",
     excerpt: "Transform your safari photos from snapshots to stunning wildlife portraits. Professional photographer shares camera settings, lens recommendations, and composition techniques specific to Yala's unique lighting conditions.",
-    image: "/images/safari/jeep-safari.jpg",
+    image: "/images/wildlife/blog3.jpg",
     category: "Photography",
     publishDate: "2025-12-20",
     content: `
@@ -382,7 +382,7 @@ Book a photography-focused safari with guides trained to position vehicles for o
     title: "The Secret Life of Sloth Bears: Yala's Most Misunderstood Resident",
     slug: "secret-life-sloth-bears-yala",
     excerpt: "Despite their comical appearance, sloth bears are formidable wild animals with fascinating behaviors. Learn about their diet, habitat preferences, and why they're actually more dangerous than leopards.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCU9z_1YBf6eFmPPJKdBWJQ6FWJYqhPPSqPGmqEqaXZC-FvA7d3Q-YYG_Yd0TJGj7rC5fxM-G0gNLHrQJXFEYEHoIB8aQPpDvI6E7wd2PhvghJFoA4fMHjQ1z0_CqIf9JgqVfBc8bYg8lD9qvYm0YqOvQ2VB8P-V9L0PqXx8jHgKF9LM",
+    image: "/images/wildlife/blog4.jpg",
     category: "Wildlife Guide",
     publishDate: "2025-12-15",
     content: `
@@ -524,7 +524,7 @@ Book a full-day safari for the best chance of spotting all of Yala's "Big Three"
     title: "Best Time to Visit Yala: A Month-by-Month Wildlife Guide",
     slug: "best-time-visit-yala-monthly-guide",
     excerpt: "Planning your Yala safari? This comprehensive month-by-month breakdown reveals the best times for leopard sightings, bird migrations, elephant behavior, and weather patterns throughout the year.",
-    image: "/images/landscapes/yala-sunset.jpg",
+    image: "/images/wildlife/peacock (1).jpg",
     category: "Travel Planning",
     publishDate: "2025-12-10",
     content: `
@@ -560,7 +560,7 @@ Yala experiences two distinct monsoon seasons and two dry periods:
 
 **Verdict**: Outstanding month for all-around wildlife viewing. Book early as accommodations fill quickly.
 
----
+
 
 ### FEBRUARY
 **Climate**: Dry and warming (24-30°C)
@@ -580,7 +580,6 @@ Yala experiences two distinct monsoon seasons and two dry periods:
 
 **Verdict**: The single best month for guaranteed leopard encounters. Worth the crowds for exceptional wildlife density.
 
----
 
 ### MARCH
 **Climate**: Hot and very dry (26-33°C)
@@ -601,7 +600,6 @@ Yala experiences two distinct monsoon seasons and two dry periods:
 
 **Verdict**: Hardcore wildlife enthusiasts' favorite month. Bring sun protection and embrace the heat for incredible sightings.
 
----
 
 ### APRIL
 **Climate**: Extremely hot and dry (27-35°C)
@@ -622,7 +620,6 @@ Yala experiences two distinct monsoon seasons and two dry periods:
 
 **Verdict**: Best month for wildlife density but prepare for serious heat. Early morning and late afternoon safaris essential.
 
----
 
 ### MAY
 **Climate**: Very hot, occasional showers begin (26-34°C)
@@ -642,7 +639,6 @@ Yala experiences two distinct monsoon seasons and two dry periods:
 
 **Verdict**: Transition month with continued excellent wildlife viewing at reduced prices. Strategic planning around afternoon rain possible.
 
----
 
 ### JUNE
 **Climate**: Southwest monsoon begins (24-30°C)
@@ -663,7 +659,6 @@ Yala experiences two distinct monsoon seasons and two dry periods:
 
 **Verdict**: Best for visitors who appreciate lusher scenery and don't mind rain. Budget-friendly with peaceful safaris.
 
----
 
 ### JULY & AUGUST
 **Climate**: Intermittent rain, cooler (23-29°C)
@@ -684,7 +679,6 @@ Yala experiences two distinct monsoon seasons and two dry periods:
 
 **Verdict**: Best for birders, budget travelers, and those who prefer verdant landscapes over dry scrub. Patient visitors can still find great wildlife.
 
----
 
 ### SEPTEMBER
 **Park Status**: CLOSED for maintenance
@@ -698,7 +692,6 @@ The Department of Wildlife Conservation closes Block 1 (and most other blocks) f
 - Cultural triangle exploration
 - Beach time on south coast
 
----
 
 ### OCTOBER
 **Climate**: Northeast monsoon begins (24-29°C)
@@ -721,7 +714,6 @@ The Department of Wildlife Conservation closes Block 1 (and most other blocks) f
 
 **Verdict**: Good month for visitors who want a peaceful post-monsoon experience and don't mind occasional rain.
 
----
 
 ### NOVEMBER
 **Climate**: Peak monsoon (23-28°C)
@@ -742,7 +734,6 @@ The Department of Wildlife Conservation closes Block 1 (and most other blocks) f
 
 **Verdict**: Only recommended for serious birders or those with flexible schedules who can wait out weather.
 
----
 
 ### DECEMBER
 **Climate**: Rain decreasing, pleasant (22-27°C)
@@ -763,7 +754,6 @@ The Department of Wildlife Conservation closes Block 1 (and most other blocks) f
 
 **Verdict**: Good transitional month. Better for birding than large mammal photography, but improving daily.
 
----
 
 ## Special Interest Recommendations
 
