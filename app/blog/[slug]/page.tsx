@@ -58,19 +58,19 @@ export default function BlogDetail({ params }: BlogDetailProps) {
       
       if (trimmedLine.startsWith('# ')) {
         elements.push(
-          <h1 key={key++} className="text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em] mb-6 mt-12 first:mt-0">
+          <h1 key={key++} className="text-white text-xl md:text-3xl font-black leading-tight tracking-[-0.033em] mb-4 mt-8 first:mt-0">
             {trimmedLine.slice(2)}
           </h1>
         )
       } else if (trimmedLine.startsWith('## ')) {
         elements.push(
-          <h2 key={key++} className="text-primary text-3xl md:text-4xl font-black leading-tight tracking-[-0.015em] mb-4 mt-10 border-b border-[#493f22] pb-3">
+          <h2 key={key++} className="text-primary text-lg md:text-2xl font-bold leading-tight tracking-[-0.015em] mb-3 mt-6 border-b border-[#493f22] pb-2">
             {trimmedLine.slice(3)}
           </h2>
         )
       } else if (trimmedLine.startsWith('### ')) {
         elements.push(
-          <h3 key={key++} className="text-white text-2xl font-bold leading-tight mb-3 mt-8">
+          <h3 key={key++} className="text-white text-base md:text-lg font-bold leading-tight mb-2 mt-6">
             {trimmedLine.slice(4)}
           </h3>
         )
@@ -79,7 +79,7 @@ export default function BlogDetail({ params }: BlogDetailProps) {
         if (trimmedLine.includes('**')) {
           const parts = trimmedLine.split('**')
           elements.push(
-            <p key={key++} className="text-[#cbbc90] text-base md:text-lg leading-relaxed mb-4">
+            <p key={key++} className="text-[#cbbc90] text-sm md:text-base leading-normal mb-3">
               {parts.map((part, i) => 
                 i % 2 === 0 ? part : <strong key={i} className="text-white font-bold">{part}</strong>
               )}
@@ -88,7 +88,7 @@ export default function BlogDetail({ params }: BlogDetailProps) {
         } else if (trimmedLine.includes('*') && !trimmedLine.startsWith('*')) {
           const parts = trimmedLine.split('*')
           elements.push(
-            <p key={key++} className="text-[#cbbc90] text-base md:text-lg leading-relaxed mb-4">
+            <p key={key++} className="text-[#cbbc90] text-sm md:text-base leading-normal mb-3">
               {parts.map((part, i) => 
                 i % 2 === 0 ? part : <em key={i} className="text-primary italic">{part}</em>
               )}
@@ -96,7 +96,7 @@ export default function BlogDetail({ params }: BlogDetailProps) {
           )
         } else {
           elements.push(
-            <p key={key++} className="text-[#cbbc90] text-base md:text-lg leading-relaxed mb-4">
+            <p key={key++} className="text-[#cbbc90] text-sm md:text-base leading-normal mb-3">
               {trimmedLine}
             </p>
           )
@@ -158,7 +158,7 @@ export default function BlogDetail({ params }: BlogDetailProps) {
 
         {/* Back Button Bar */}
         <section className="py-4 px-4 md:px-10 lg:px-40 bg-surface-dark/30  border-[#493f22]">
-          <div className="max-w-[900px] mx-auto">
+          <div className="max-w-[1200px] mx-auto">
             <Link 
               href="/blog"
               className="inline-flex items-center gap-2 text-primary hover:text-[#eeb410] transition-colors group"
@@ -173,12 +173,11 @@ export default function BlogDetail({ params }: BlogDetailProps) {
 
         {/* Blog Content */}
         <article className="py-12 md:py-16 px-4 md:px-10 lg:px-40 bg-surface-dark/20">
-          <div className="max-w-[900px] mx-auto">
+          <div className="max-w-[1200px] mx-auto">
             {/* Content Container with Card Style */}
             <div className="bg-surface-dark/50 backdrop-blur-sm border border-[#493f22] rounded-xl p-6 md:p-10 lg:p-12 shadow-xl">
               {renderContent()}
             </div>
-
             {/* Share & Navigation Section */}
             <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Share Card */}

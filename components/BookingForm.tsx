@@ -20,10 +20,9 @@ export default function BookingForm({ packageTitle, pricingTiers }: BookingFormP
 
   // Calculate total price based on group size and selected tier
   useEffect(() => {
-    // Find the appropriate pricing tier based on NUMBER OF ADULTS only
-    // Children and infants have separate fixed pricing and should not affect adult tier pricing
+    // Find the appropriate pricing tier based on ADULTS only
     let selectedTier = pricingTiers[0] // Default to smallest group
-
+    
     if (adults <= 1) {
       selectedTier = pricingTiers.find(t => t.groupSize.includes("1")) || pricingTiers[0]
     } else if (adults === 2) {
@@ -42,13 +41,13 @@ export default function BookingForm({ packageTitle, pricingTiers }: BookingFormP
     const adultsTotal = adults * selectedTier.pricePerPerson
     const childrenTotal = children * selectedTier.childPrice
     const infantsTotal = infants * selectedTier.infantPrice
-
+    
     setTotalPrice(adultsTotal + childrenTotal + infantsTotal)
   }, [adults, children, infants, pricingTiers])
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-
+    
     // Create WhatsApp message
     const message = `
 *Safari Booking Request*
@@ -62,7 +61,7 @@ Name: ${fullName}
 Email: ${email}
 Phone: ${phone}
     `.trim()
-
+    
     const whatsappURL = `https://wa.me/94123456789?text=${encodeURIComponent(message)}`
     window.open(whatsappURL, '_blank')
   }
@@ -269,7 +268,7 @@ Phone: ${phone}
             <span className="material-symbols-outlined text-[20px]">send</span>
             Request Booking via WhatsApp
           </button>
-
+          
           <button
             type="button"
             onClick={handleCheckAvailability}
